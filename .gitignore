@@ -131,3 +131,4 @@ dist
 
 .venv
 data/feedback.csv
+data/.ipynb_checkpoints
