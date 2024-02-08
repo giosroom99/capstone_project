@@ -4,6 +4,7 @@ import { api } from "../../utils/apiCall";
 const ChatComponent = () => {
   const managerId = "yourManagerId";
   const employeeId = "yourEmployeeId";
+  const isManager = true;
 
   const handleSubmitMessage = async (newMessage) => {
     try {
@@ -19,9 +20,15 @@ const ChatComponent = () => {
 
   return (
     <div className="container">
-      <h1 className="">anonymous message to Manager Name</h1>
-      <div className="row">
-        <div className="col-8">
+      <h1 className="">
+        {isManager === true ? (
+          <i className="bi bi-incognito"></i>
+        ) : (
+          "Anonymous Chat"
+        )}
+      </h1>
+      <div className="row justify-content-center">
+        <div className="col-9">
           <Chat
             managerId={managerId}
             employeeId={employeeId}

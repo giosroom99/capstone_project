@@ -6,6 +6,7 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
   const [message, setMessage] = useState("");
   const [conversation, setConversation] = useState([]);
   const senderID = "employee_1";
+  const isManager = true;
 
   useEffect(() => {
     const container = document.getElementById("chat-container");
@@ -46,7 +47,7 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container bg-dark border border-2 rounded mt-3">
       <div
         id="chat-container"
         className="mb-3"
@@ -68,6 +69,16 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
               }
             >
               {msg.message_text}
+              <p
+                className={`${
+                  msg.sender_ID !== senderID
+                    ? "text-sm-start pt-1 "
+                    : "text-sm-end pt-1 "
+                } fw-bold font-monospace  fs-6`}
+              >
+                {" "}
+                {msg.timestamp}
+              </p>
             </div>
           ))}
       </div>
