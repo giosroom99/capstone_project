@@ -1,0 +1,1202 @@
+[
+  {
+    "r_id": "1fdd0f77-c8bd-43e8-ad9b-03ac95e3c1ad",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "e3a6211a-5eab-4d3d-b7dd-9c927fcd8979",
+    "users_reporting_mngr": [
+      "24747d9e-eace-4f55-9fe5-7d3604319c3e",
+      "39def820-7039-4d26-bfe1-f7a28dc0f548",
+      "45e3e0f9-506b-4412-a32f-6ffa3515cc58",
+      "e0062da2-42a9-4712-973a-9c21333ae109",
+      "7c536ba3-a259-47e9-923d-3591e39c73e5",
+      "b33441b0-6f39-47a4-9548-dd3de275370f",
+      "236feda3-2dc2-447c-9497-829d292a8db8",
+      "bf602990-62dc-4151-ac82-c4f59468532a"
+    ]
+  },
+  {
+    "r_id": "d7b43138-1b5e-45a8-88b6-fe39c3889a5b",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "22fb9ee1-c26a-4d4d-82c4-2d6c02baab61",
+    "users_reporting_mngr": [
+      "6ff58e48-0a0f-44e6-a788-9ce1ed07de77",
+      "94f95669-947e-410b-b4dc-ea3674e4ddd4",
+      "beedc4a5-69b3-44e3-8732-1533bf912a81",
+      "e8255465-3418-42aa-ba4f-704cf1ddefd9",
+      "5ded7ea2-c866-4a0c-8a91-23d72788e2f5",
+      "ebe8db07-ddad-4c5e-8816-d060df4aa824",
+      "36cd4969-d101-4e8d-acc4-bfe7b9344783",
+      "3b286a5d-65c3-4586-8358-290df48a5cd6"
+    ]
+  },
+  {
+    "r_id": "146df298-c54d-40ed-905e-8bb13196793a",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "a48cfd61-0e5f-4e4b-b0ea-97ab2c968e15",
+    "users_reporting_mngr": [
+      "a791d2f3-f784-4500-8a4b-541c7c997dd4",
+      "640f6ec7-1674-471c-ac9e-ca9b1b29792a",
+      "66bcaeb9-5185-48a1-a4cc-ce53d6f93b7a",
+      "bedbb6ef-8fb1-4629-911e-dafceaaf1cd7",
+      "a6388191-f87e-4942-a9bb-21ff17001527",
+      "a942eeaf-0a86-4dbe-8690-6700c616bf0f",
+      "37dea432-6204-4a93-8d64-61064aeba7f5"
+    ]
+  },
+  {
+    "r_id": "f8accf1a-4053-4120-a565-f8831e26d835",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "dd318bf2-6fd3-45ee-a6cc-ab5044e21b73",
+    "users_reporting_mngr": [
+      "6c03e6d4-5cf2-4c9e-b677-36b70bd15582",
+      "d856d0f3-163b-46fe-9b59-932a11695ff7",
+      "43e0d0dd-b7f0-4e75-9b3f-7ddba3cb337c",
+      "46979bb4-5231-4464-835d-08e8e5296423",
+      "5ffa8110-222b-47f4-9f7e-5eda87c7d031",
+      "0bcf0439-8c9b-4b77-8ce8-58d274f337be",
+      "76405732-1c19-4ba8-8851-7dd594efb125"
+    ]
+  },
+  {
+    "r_id": "d0cda7bf-8f1f-40ac-a006-811a901148d8",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "bf01bf7b-87db-4b99-bb3e-ce7e7509d02d",
+    "users_reporting_mngr": [
+      "567a7b4c-086a-43de-9f88-a98f9e1d7419",
+      "dbcb5072-c821-4540-a1a2-86ac6a1a75ad",
+      "c84da558-7611-417f-af88-9fb9bbbb36d9",
+      "96d52cde-7e5b-4423-8458-45a761b22d60",
+      "3571b9be-472b-4025-a3ae-10d267a87219",
+      "310eed58-1570-4d59-9b25-e0e75ecedbd5",
+      "99c74c97-43eb-43e7-b682-e26e0acb179d"
+    ]
+  },
+  {
+    "r_id": "2a157be0-56f6-4131-a690-aa5bb4b31569",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "11d46e6d-670f-4fca-be3c-0afde89ba60c",
+    "users_reporting_mngr": [
+      "21d89143-b530-414e-870f-5e65cf208346",
+      "933c1594-47cf-4d1c-a0ba-f64b136ab27b",
+      "4431e5ea-b52e-4cf4-aced-ba74e02ef44f",
+      "01cb108c-5a7a-4026-b269-b199edd63f36",
+      "38147fb0-1d38-41aa-8757-68248ec79049",
+      "d1c0565a-8018-4c04-ab58-53972d176efd",
+      "a71d9e64-a75d-479a-b203-d055bf66dcf1"
+    ]
+  },
+  {
+    "r_id": "45de1d01-c3ca-4541-9458-0a95981d0959",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "0c05ef6c-376a-4e09-bc52-cd6d8f8f40f5",
+    "users_reporting_mngr": [
+      "ec78ef36-6542-4f97-9fed-ac2b1cab5a54",
+      "f9781c92-5982-4763-aa4e-dc5e846c82ec",
+      "d62632df-b877-41bd-b7ac-579cb3113d31",
+      "6ed141bf-46ce-4f2c-bc7c-12fcba1a83a5",
+      "82cb9289-78e9-4d9a-b67f-bb2d7464adc7",
+      "7d4d1347-554f-488a-ae5d-d89e2cc1490c",
+      "2d93535a-e580-45cd-b4bc-dfb981cec63e"
+    ]
+  },
+  {
+    "r_id": "b23194a6-be07-4c21-a171-f7b0481fa26d",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "3412462e-e756-4a99-96d8-278b2e478ca3",
+    "users_reporting_mngr": [
+      "ab79b77a-bd29-4ec2-baff-51670c159da0",
+      "32983e77-16d2-458a-a60b-60e5bb46e38a",
+      "41002927-f616-40c1-84ee-efcea41c2365",
+      "db8b13cf-ebe0-4817-8a71-d42964a464aa",
+      "25004ca1-6622-4d6d-aa4e-5b57cf2ebbfc",
+      "006ba3e8-bee1-4523-bc5b-48baeea07b82",
+      "3a26b5bb-6c07-46e8-b2da-b6c6e79a3fe7"
+    ]
+  },
+  {
+    "r_id": "d3979299-d753-42fa-a7db-7074fd21a456",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "e9e49567-39bc-494e-8089-1258677122d6",
+    "users_reporting_mngr": [
+      "0d8fbea8-9411-47db-ab2f-3c63dce9b1ad",
+      "63f801be-02b6-41a3-98ea-07921a4ca7d6",
+      "dcd6eec1-be29-4dcb-a6cc-0087370d0648",
+      "8be04e82-7c87-431d-a4ad-0202f2c42968",
+      "f929a9a8-f1a6-4deb-b1a4-cb63579380b8",
+      "917206a0-3c01-4bb0-ae23-7820e54e5075",
+      "25a7dcb2-1494-4e89-add1-1c9b0bd8cd56"
+    ]
+  },
+  {
+    "r_id": "6308669a-4137-458e-91b0-7cda6a7e6bf9",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "80c5e1c6-b339-49fb-800c-672b6f0e3a62",
+    "users_reporting_mngr": [
+      "2e135c3e-e17e-4115-ace9-db7a144cad71",
+      "041429f0-ec55-4ed3-b23c-d35ee9827faf",
+      "7ea7efaf-400d-42af-b610-3d1997309ddf",
+      "1b36fec9-1aac-46c7-8104-7bc19b9b415b",
+      "a46c7fac-c733-4491-bd74-14ffaefee42e",
+      "46ea82c8-1024-4698-bb77-996f6b17659a",
+      "5670911b-481c-4165-8304-d22340baaa0c"
+    ]
+  },
+  {
+    "r_id": "4e1a4d8c-067f-446a-b63b-9f466237c75d",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "546b219d-e1ed-494e-b30d-b9a458e0ba70",
+    "users_reporting_mngr": [
+      "1fa44d0e-4c0a-4dd4-a6bc-dc99c184cdd8",
+      "80db4151-bfc6-4cbc-852b-ac6127d22892",
+      "b7f80894-f00e-47fc-aa85-e6a35ca6bdd0",
+      "8936770e-f1db-4873-868e-6be631629dbc",
+      "2da78b13-a658-4310-89a5-2000fea93a05",
+      "7c6629bc-7cd6-4968-9713-71837c35b2c5",
+      "bd62176f-fb59-4fb9-afbc-61619b77e50d"
+    ]
+  },
+  {
+    "r_id": "582f51c1-9952-4619-9996-75378d53ba56",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "a1211e31-963a-45c2-9a12-e82129101f49",
+    "users_reporting_mngr": [
+      "1cfb3628-f287-4218-9196-2956fac17fea",
+      "97525b9b-14aa-4808-be5e-18c4cfb3315e",
+      "1ee6ef4c-e6b4-402e-b1b2-7e734696dade",
+      "5bb669d1-a6c7-4702-88f8-f2a630256c56",
+      "be0ea513-6430-4b95-aef5-f0b3cce81e68",
+      "23768ec0-8ea5-46ff-b86f-eb73bce1f7b5",
+      "5890e412-1877-4df0-9981-dbe250e05f39"
+    ]
+  },
+  {
+    "r_id": "bb8f492f-5b1b-4de0-b372-2dc8feb60b42",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "2e83fbd0-0b72-468b-bba6-515b9b4df6f9",
+    "users_reporting_mngr": [
+      "fed4e1a1-1568-461d-8166-4320bb23fe6c",
+      "bb871fbb-544e-4aa3-a4cd-c96eeef9ebec",
+      "383018cd-168c-4a75-8113-82a1aa0c1bb9",
+      "026becdd-ce50-4846-a5c7-d1a7c897794b",
+      "6edb78fd-5a6d-45ce-8451-610e42e44730",
+      "4a110e70-4808-4b67-a60c-d213f1b88547",
+      "239220f3-f355-4d25-ae9c-4f425904b146"
+    ]
+  },
+  {
+    "r_id": "d028c586-1df0-4450-bdd5-a5921a1f3cde",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "4e86f820-1699-44a2-b72b-9f8e9a74f524",
+    "users_reporting_mngr": [
+      "8c4b0d8e-a523-4b1f-aed0-9cc91c429b35",
+      "a8b0a90a-36d2-4506-9790-4e969e8f32d2",
+      "252bf365-7c0a-4949-bd5a-ec0be45c6b94",
+      "67a00d04-f949-407a-9387-082c9056aaf6",
+      "13fdfe6d-5c3c-4407-9184-99cde99bc4ab",
+      "74dab971-8b8a-445d-9812-0dabbc10bf4b",
+      "8407c926-4544-437e-ba4e-bcc9b34b80f8"
+    ]
+  },
+  {
+    "r_id": "7c0530c4-e2a0-47a7-ab91-32a2fbfebed6",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "703b282b-8af1-424f-94d0-2c02c9956d4c",
+    "users_reporting_mngr": [
+      "7f85256c-64c7-4ad5-89c2-1f71018be956",
+      "05e641e8-934e-4a93-8387-cbf4c78fdc79",
+      "785a738b-d5e8-4e7b-a08b-dca94aef0e65",
+      "64278192-a66e-4c5f-8204-11b56768eb0d",
+      "92c75645-b492-4aff-970f-830cad911c98",
+      "1ec60d5a-6097-4f83-8597-5ab47a80885d",
+      "4c8124ac-94e1-4cec-8c99-48611e2fc713"
+    ]
+  },
+  {
+    "r_id": "a20547db-3211-4414-97d4-7b5143f9f53f",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "77adb080-c033-475c-9a64-9b2cf441f938",
+    "users_reporting_mngr": [
+      "cf330062-ceb4-481e-835e-105be8c3548d",
+      "174b1326-21a4-4bfd-9b57-4cc7edf54cef",
+      "11a6bae0-031c-497b-8542-f5740329e517",
+      "2cb039a9-3409-4be2-bd8d-8c33e25bcbeb",
+      "d7f61d4f-b17c-43fe-b3fc-d09df4a396f0",
+      "5b046099-c09a-4ee1-a111-8dc4594db7b0",
+      "59b8a675-96aa-4dec-a9ed-7b981704c86d"
+    ]
+  },
+  {
+    "r_id": "98799f40-5d94-41c8-9df6-2d65b74545f8",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "189a810b-44b9-428c-a123-e683aaf18742",
+    "users_reporting_mngr": [
+      "1a578257-47c2-4d85-bf23-ee0b31556216",
+      "3df4eda9-6a63-46c8-acb7-2252ffd872d4",
+      "ca712bf5-91f1-4e62-bf0d-8d5889a92d01",
+      "1bf103bf-8d66-40a1-a10e-f7b76a2d3eb1",
+      "ce2e1855-e58d-4087-ac77-dec36cc0ab3a",
+      "ed1c0850-51cb-44da-b15b-4d208fc314a6",
+      "9847b120-e940-44c6-9cec-2d6800d6b354"
+    ]
+  },
+  {
+    "r_id": "0fd42454-5b24-40a9-9213-166f8f0a58da",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "36ce15f2-c0fd-4ae8-bc00-030e5d2a29c8",
+    "users_reporting_mngr": [
+      "86d3bdfe-e502-4571-ac3e-5b50467d8f76",
+      "0f1fe57b-6d24-477e-a6ec-815d2172be90",
+      "b8b7e425-2d8a-4644-936a-3ddde9c6a923",
+      "d7d2cc01-4edf-4eac-8e64-e4f1ac80d5a5",
+      "bef48fb8-6abb-4e77-949d-ccb96f181533",
+      "b596793b-cf3e-4105-b578-c7cd1a3eb6c2",
+      "09bd352c-5aa4-4c4c-8354-74fc6854eeff"
+    ]
+  },
+  {
+    "r_id": "bd5403aa-9843-4789-b8b1-97bc5f1340f4",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "fe19d8a3-eac8-499b-9f18-c024ed54c961",
+    "users_reporting_mngr": [
+      "19e1e063-9559-440b-8832-5c77d228b777",
+      "183139b3-b885-4b95-af29-8c5498f4bebf",
+      "b76c2a27-fe00-49f7-bbd3-615a7d4b7e1b",
+      "cd38165b-0251-40af-98d8-e0e09fab620f",
+      "baf13ffc-87cf-4d0c-941c-46840b1fcbee",
+      "c03ca676-13a9-468a-a5b9-079dba61a3a8"
+    ]
+  },
+  {
+    "r_id": "92e6d0e8-e72b-4d00-ad3b-f8fc16b6943e",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "8709f9af-9016-4381-9f0b-0e3ed818a730",
+    "users_reporting_mngr": [
+      "265305cd-89b4-4569-9afa-1b8bd26494bb",
+      "a633ee05-98ce-4a84-ae57-b3b79b57a247",
+      "71e95832-72ec-4ade-a827-f73ab63c653b",
+      "e27dad96-e6c2-434a-8582-458e9ec92f32",
+      "83439160-ec79-441b-8b3d-7ad8e192446b",
+      "2c521f99-c065-4f54-bd51-36414d1ca0ea"
+    ]
+  },
+  {
+    "r_id": "e7430128-fbe5-478a-90b8-f93dfb7dc1b3",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "d6129136-bb19-43fa-986d-a92d4d352009",
+    "users_reporting_mngr": [
+      "80ca21ac-c9e1-4f3f-87f0-4a5d81ce8005",
+      "0bdde505-4135-4008-a88c-5758f0501ee4",
+      "0fa2baca-2dd7-4e0c-9af9-f42a49a50c18",
+      "91a9d8f9-1431-4269-b638-94681bf5cb3d",
+      "70061c90-2d62-424c-b693-c44a05bca36b",
+      "f1ef8f0c-b775-4c1a-a864-deb950f42dff"
+    ]
+  },
+  {
+    "r_id": "4a365b24-b6fa-49a0-9216-1a756ed51a5e",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "7bdc021e-d538-4957-b443-ac23c9a7e6dd",
+    "users_reporting_mngr": [
+      "e145aa34-1c92-49bd-a055-a40b2446246f",
+      "ae982cc3-1724-4339-ba84-566ccc71c194",
+      "301525f3-22ac-4f80-b172-e7ef8b607437",
+      "925671e9-80a7-4aad-b6ee-b3dfe73fe6d6",
+      "03e038df-cdfd-48ea-b126-60d5b5cd4301",
+      "4e11094d-e1c5-4de3-b39a-bc411c51a5aa"
+    ]
+  },
+  {
+    "r_id": "6d5b634f-f7d2-4874-aa61-d5f519845e1a",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "136cc54d-b14f-4085-aced-7e763ce252df",
+    "users_reporting_mngr": [
+      "d8b6344e-e8d8-485f-86e9-816c55aeaf1a",
+      "33c8692b-56d0-4e0d-a8ef-e5bb6e2b19ef",
+      "4d3437b1-04ab-4bfe-9975-e190ab66f1e3",
+      "0a285bfd-e8ac-44cf-b938-79b7cc81d839",
+      "a57b146d-af22-4286-9d05-4efe64c8f4cc",
+      "195c58b0-3955-48cd-918b-5c2353231834"
+    ]
+  },
+  {
+    "r_id": "b8177b40-5d30-4010-9bf6-348694c5d68d",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "9f2669e8-2a1b-4935-a26b-60fb99a50feb",
+    "users_reporting_mngr": [
+      "d2f6b8c9-c451-4f2b-8fca-5a68c4f18870",
+      "4cfb77ad-c6b0-475a-92fd-c5d6f5dc336f",
+      "0c237c6f-9a7e-43d1-a0ef-4bf3f2981c64",
+      "42453de2-7e0e-4f1f-bf11-a3caa0d48bf6",
+      "428ac7ff-d8aa-4dab-9bd2-e9a495c2ff5c",
+      "ae001173-8c2a-40ce-b694-6b3b2b69fe2f"
+    ]
+  },
+  {
+    "r_id": "f6384ae0-0aa7-41af-ab8a-3b6050b1a003",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "a014e02f-e736-4ff4-bf97-4d1bebb4166e",
+    "users_reporting_mngr": [
+      "9b07bddb-135e-41e2-ab62-e85e0e89eff6",
+      "b992ea17-973e-4923-848f-448bee8335bf",
+      "02d39683-d20e-4421-8788-1d48da474271",
+      "4ce1d055-49b5-44da-9269-e021e0523a50",
+      "a9cadc87-50dc-4f51-ab82-b55917044ed8",
+      "ce9a8f3b-a048-484f-bcfe-ae793520a791"
+    ]
+  },
+  {
+    "r_id": "ee5ded3e-ab89-444f-b1be-40a7624a75c1",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "3a15325a-7169-4c51-85da-8340c35e93d9",
+    "users_reporting_mngr": [
+      "9455c028-8cdb-452d-95a5-cd5fe3050498",
+      "4a0ba349-2476-49e8-a0f5-87f972b86448",
+      "3a0fa100-4cb0-4892-8a9f-608e0afa34bc",
+      "82e2815e-fbe1-4c56-ae8c-3bcecb2d0770",
+      "c84482b9-9837-436d-9bc6-8e3f59214c98",
+      "4de87b4a-605c-4f7b-a011-0fce79f1fdfc"
+    ]
+  },
+  {
+    "r_id": "d56b7df6-be98-48e2-8a08-ddd54ec69514",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "18da8a90-8fbb-443e-bede-7a6264c3efea",
+    "users_reporting_mngr": [
+      "5de5b5f3-62a7-4037-8a7e-2b8b17b0c3a8",
+      "b31d9df8-c3a4-4563-a890-a896e95ef7d2",
+      "f918b337-f618-4485-9cff-1b698ca85723",
+      "529ae06c-12a6-4962-8a58-0325d6fc029f",
+      "80bad9f5-fbd0-49e1-8151-4b5243fabc84",
+      "dc482dda-f722-4ff2-87a8-48214d0459d9"
+    ]
+  },
+  {
+    "r_id": "b3838159-2079-4fa8-861e-5777a7768e0d",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "9a1f39c6-b2d2-4173-b592-0b1408c49747",
+    "users_reporting_mngr": [
+      "b57b8074-aa40-4703-879a-8a6a838c27bf",
+      "1c600859-e8da-49aa-b207-0cddb4471356",
+      "e03d2a90-cd26-4bf0-a05d-9c9c89852b2b",
+      "1e851064-b766-48c7-b3f6-f95c8c0678d8",
+      "efde39ba-260b-46fc-b10a-fde2d8cc180f",
+      "ef8cce3c-a98c-4ac0-928f-229ca04e3439"
+    ]
+  },
+  {
+    "r_id": "ec66cbfa-6008-43f6-a5d9-eff4ee754945",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "798a7fb9-8c13-4de7-85f2-3ecf43533b0d",
+    "users_reporting_mngr": [
+      "1ae5b8ee-724a-4752-aa7d-8e00543a5128",
+      "f54acf76-28f8-4a29-bebb-3158626a00b5",
+      "8bb4e095-0031-4848-a582-2e7d8d8e2e36",
+      "926ad54a-eed9-4706-82f3-7fdf01e0ff27",
+      "e6d5cb20-6be6-4455-b2d9-8e839c197f26",
+      "2304dd45-3b18-4daa-ba5d-f5c858cf691d"
+    ]
+  },
+  {
+    "r_id": "80e34ebd-dc18-4116-8930-b4e16e8a9f10",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "012328aa-41c3-4d60-a051-b4d5a79d5c12",
+    "users_reporting_mngr": [
+      "a5798931-e396-4cd9-8b04-162e93f120e6",
+      "09cdc5bf-fb24-4490-99cf-c4e9232741f1",
+      "c071ab61-9851-477a-b1f3-af5b1ff67278",
+      "28f32fdb-c93c-4311-9bce-6f4d9416f7d5",
+      "d080bdd1-6c7a-478e-a573-e7642bb887a1",
+      "d36447ce-2873-414c-a58b-80f07126759e"
+    ]
+  },
+  {
+    "r_id": "d6c4dfd8-dd83-4282-a482-1b4954795f9d",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "bad09f07-6df8-4b7b-967e-c79fb6799336",
+    "users_reporting_mngr": [
+      "15cb1a8f-7a10-41a6-ad41-637e0863047e",
+      "e768c712-7fe8-462d-962d-05325df7e696",
+      "30a22374-fdce-4aae-b401-fd0561c12fe9",
+      "a222dc74-676b-45d8-b329-d579c0fe4f54",
+      "e0b60021-629e-4580-afd3-8385fb04056e",
+      "de946a24-22be-49fe-8b92-51fd11a9751b"
+    ]
+  },
+  {
+    "r_id": "2cb12e09-3405-4f3f-a3eb-a24c30349ee1",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "117d33d3-ec36-4750-a596-091632b8b990",
+    "users_reporting_mngr": [
+      "ab3690bd-ab27-4d25-adfe-1a97787b960a",
+      "6ef633f3-d2cc-45e6-9f17-0ba6efc1a97a",
+      "3c9249c3-8d1e-480e-9cbc-23f86153a8bd",
+      "db1f4ab6-2147-41f6-8b32-dc6bc56cc562",
+      "dfc65534-1c86-4518-ad2a-01a2b36a8562",
+      "016adf66-a3a8-4cf5-bcbd-6fb24ff1ead1"
+    ]
+  },
+  {
+    "r_id": "aed7d346-5263-4216-ab6d-122b241bddfd",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "ffee79ca-a7a8-4017-8962-13f0a8683957",
+    "users_reporting_mngr": [
+      "713c141e-502d-4424-8eaa-645177cefb27",
+      "9df4ed97-2243-45d5-b75b-f0a234a63e0e",
+      "98233114-722a-4ba1-973b-7d687dc12e5d",
+      "82544c57-405e-4269-ac33-013a05ba3d9b",
+      "e076a732-9b98-410c-934d-b59b45e99bf6",
+      "ea224557-a894-4818-b411-601f0037dc7a"
+    ]
+  },
+  {
+    "r_id": "8fbfbf60-9720-41ee-b686-cb0ba3b1c884",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "ea7f334f-b19e-42ec-ac64-e9586700e4e3",
+    "users_reporting_mngr": [
+      "2b78ddc8-34a0-4a30-b9e5-c220561ea23a",
+      "2e9dc451-0a7f-4502-945e-3bb3bf853fd2",
+      "4872614c-c4b2-43b0-b7d3-92af9e057a42",
+      "bc903d25-9da9-4333-b8b4-2ade6fa62353",
+      "386dfc07-68f8-4912-b35d-b271c0f5b2f8",
+      "6b3ab4fe-7480-44ba-9201-0dc1f7e148c3"
+    ]
+  },
+  {
+    "r_id": "bd61ebc0-ed92-4b2b-9526-7f025a1179f0",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "02a74c00-3186-4e9c-884d-af56faf79650",
+    "users_reporting_mngr": [
+      "10ca397c-42b7-49d4-a9aa-5add0b0d1f57",
+      "55a5678f-f9b4-4263-a691-f5eb6e1e27a6",
+      "c4502689-3402-43ea-aea0-469f8641c795",
+      "6b9c163c-3856-4fed-a3b6-da7e70b1418f",
+      "ebc5d929-1987-4a47-8882-4535e38f891d",
+      "b014280d-9ac1-45d8-8468-d52331d3a93d"
+    ]
+  },
+  {
+    "r_id": "a1855fd2-c0b5-45b1-b4f2-800972723c6a",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "70896d97-7ddb-47fa-bf67-023c457c715b",
+    "users_reporting_mngr": [
+      "7e10ce36-640f-4525-954b-6e380e948f5b",
+      "7dccfecd-2b0c-4003-b546-cd2d8e424bfe",
+      "e4afe619-4b47-4d52-81bd-70196d4eadba",
+      "3fce1b8e-a2f7-4a7b-80ab-edc08140bc3a",
+      "73db5db3-4ac1-4b3a-9279-0bf1d586c092",
+      "00bd053c-18aa-45da-a302-93463c3778d5"
+    ]
+  },
+  {
+    "r_id": "188e3803-0769-4a31-b264-97200554ef23",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "d7f11fdd-d054-4fa8-9b2b-dde52a7e131c",
+    "users_reporting_mngr": [
+      "2ad7b332-a2d2-43ca-9a76-2e1aa8b9404c",
+      "f163252a-a00b-4182-b18d-968e5a0c2a41",
+      "84655839-7650-4a41-a691-74b4578a310c",
+      "ad02599f-a654-41cb-8573-8c16443a6da6",
+      "f4e106d0-6c15-4d6c-a049-8631858dd97e"
+    ]
+  },
+  {
+    "r_id": "00b4927b-d2b7-4aa5-8ee0-1ad7bc03e7a4",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "8093f74f-ff1b-43c1-b682-35f5e59569f2",
+    "users_reporting_mngr": [
+      "18103e07-9c96-47c0-b9b3-e3c4b9a61953",
+      "7244bd66-7e2b-4890-b000-1cb6d7510626",
+      "8576fb91-c663-4c59-8ad1-94bad1b17244",
+      "1f625a29-11d0-4e98-8d7a-4b8050e051cc",
+      "444efdd6-b97d-4d1f-be58-14e91f199f5b"
+    ]
+  },
+  {
+    "r_id": "ac4f3380-8ba1-4fae-9c63-4b4dc81da08a",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "1cb1ac43-49a0-4cc8-a7c2-8e44c56a191a",
+    "users_reporting_mngr": [
+      "d55dfa43-e12e-43c6-b70b-11e2d1e5c0e4",
+      "aa56859f-f9df-4ad4-bc9c-c9b8d1471b9d",
+      "010252d3-5f0c-4fe4-b053-283057cdc89e",
+      "9ee22a84-b128-4e7e-950f-f211a10143c6",
+      "9042fde3-59a0-45c4-bced-dac9a652f9f1"
+    ]
+  },
+  {
+    "r_id": "31aa0a79-6d0c-46de-b318-4cc219867d6e",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "0c7ffc2a-5cd8-452d-966a-55fbbfac40e7",
+    "users_reporting_mngr": [
+      "6dfc5bec-ac2c-4e48-827a-cd790f729e51",
+      "17afe407-c65a-439f-a851-16db1432aff9",
+      "9d00456f-1ff4-4b8c-acf5-676adc108e90",
+      "76610bb3-f8c2-4c4f-89ea-39f959ebcacb",
+      "6427424a-4f4a-403d-b4f4-9b116431994d"
+    ]
+  },
+  {
+    "r_id": "e4448149-42bb-44a4-82a6-e18da9302d8c",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "120dcb2a-a2d3-44d3-8cdd-65fe98908513",
+    "users_reporting_mngr": [
+      "b0786d34-10f7-45d7-939b-7b8cfd562ea3",
+      "e9708b1a-dca3-4177-84cb-0878fcc0dcb3",
+      "38734888-d149-4bd9-9219-7ee8b6d3133d",
+      "af891e6f-468f-4cf0-8375-0e869265c43f",
+      "d3fc0a1b-7d58-41f2-a940-5517e97defc0"
+    ]
+  },
+  {
+    "r_id": "440f8724-7908-4462-8c28-a1a53532c05a",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "531a20e8-bf58-4c53-995a-3081192bb2df",
+    "users_reporting_mngr": [
+      "cb5214ee-3550-433c-a0da-a515a57fb463",
+      "71005538-fac0-4478-9aee-6d6df6002edb",
+      "0a60e9f5-bdbd-421e-844c-568168eb9b89",
+      "52f6a34e-1ac8-454f-a709-cb349c61be4a",
+      "31edfffd-244e-489b-9e5e-e3cf0e00cf88"
+    ]
+  },
+  {
+    "r_id": "70ecf98b-0d07-4bc5-a1f5-dc2d06ce3a5d",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "fe2ee32c-6e4f-4dbf-9f49-4600340c1162",
+    "users_reporting_mngr": [
+      "e73a1c72-64bf-4aaf-920c-7cfbdedf8c49",
+      "4a77a0c4-f1a4-4d7a-8a23-b0667ea92293",
+      "bdfd29d4-8fa6-44c1-9ba3-1107137e5b55",
+      "f094eac7-ee28-4b13-8e16-420fec01102c",
+      "ff04b66b-a63a-4537-8005-4fc6361a3a5e"
+    ]
+  },
+  {
+    "r_id": "6dea7fb4-ec48-4af2-ae72-7dd7e1526860",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "35dc1b0c-b0c4-492c-9def-884cfec7276d",
+    "users_reporting_mngr": [
+      "9f225c19-726b-40fb-8d7a-e63d45589215",
+      "8af86dd9-bd5b-4d30-8513-37a3cac7bedb",
+      "def88c75-04c3-48e2-8663-367fc9a455ce",
+      "9707c1bd-9006-4f9f-b1f7-a5dfdb7e33a4",
+      "82f26bfd-416a-4d15-b0b7-faa17e3fc9d3"
+    ]
+  },
+  {
+    "r_id": "6a89d5d9-1e96-44d8-8b2a-8bad74253941",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "c42808c9-b8fa-487f-83dd-90233f6bdccf",
+    "users_reporting_mngr": [
+      "bfc131e9-dc4e-4d15-a7f4-341fdf8213f8",
+      "b0a0c050-e01a-447f-84d7-41378f5cce37",
+      "03d9841f-7fa1-4351-90ec-44511002d904",
+      "9a057012-bf45-4f39-9cd9-076cf8c7b51c",
+      "33147a1a-94cf-4503-b79a-e609736805e5"
+    ]
+  },
+  {
+    "r_id": "da38635f-c0fb-4a63-8114-24fb03cdf1f2",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "3b202bef-d0c3-4548-8a60-fbc4549f7de4",
+    "users_reporting_mngr": [
+      "538121c6-b1be-4c28-bb6e-28141af07c84",
+      "28a53deb-a661-40e9-9d42-4c253d2d54f8",
+      "7175c468-4138-4ce9-9df8-f84bbce27d78",
+      "84250bd4-87d6-43b0-9d60-35327b3ef953",
+      "2c497624-4020-4c52-a8c9-264d75742d0d"
+    ]
+  },
+  {
+    "r_id": "966c90f7-86e0-4f40-9383-82de22e668dd",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "3af3e94e-f4bd-4a56-97f1-f42ad1d53445",
+    "users_reporting_mngr": [
+      "65b85525-3ff1-4980-87d3-a9f20c9157b5",
+      "9e41a21f-ae97-492f-b504-49f7db235de9",
+      "19b60165-5811-40b4-a05f-bfa5635c14a6",
+      "82885b26-7dec-4f41-9801-6a05cb6c55b1",
+      "54ebeda8-be5f-4a35-bcae-4ea219c7b095"
+    ]
+  },
+  {
+    "r_id": "4c828264-a961-48e9-911d-245fd770c192",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "175b1648-b199-4f25-8a2f-fb01d8245f79",
+    "users_reporting_mngr": [
+      "5c28f704-8273-493d-ba64-8456560d1e2d",
+      "52d48477-180c-499e-87e5-17a7fd5d9e93",
+      "61ead359-8085-4e0d-a82d-209bbda0d573",
+      "9f7de982-6805-4b43-ac6c-0c8781b220f6",
+      "6f1b0070-a517-42b3-b2b0-f3f3d89b1e9c"
+    ]
+  },
+  {
+    "r_id": "022c2f08-7418-45dd-b9d9-e5afd60bf6d9",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "ad010c96-7c78-4439-b933-4e1742e305bd",
+    "users_reporting_mngr": [
+      "cd25bae4-1a61-40bf-bd85-44c5effcd9d8",
+      "f50b054b-a684-43f8-bffc-c67e3b10d36f",
+      "82598c0a-ca3b-448f-b7a1-cf0b5830b5ba",
+      "dea2d3b9-3605-46bc-97e0-7197fbb19969",
+      "b87c9245-400f-46a7-a6fe-126e5d0ccca8"
+    ]
+  },
+  {
+    "r_id": "4922e875-f6ac-4bb8-bf32-02ca43f7cab4",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "60caacd9-f464-49db-9d59-bd231739a247",
+    "users_reporting_mngr": [
+      "1950f310-50a6-494b-b8d1-139692fad099",
+      "24ad4852-3233-4db7-b80c-dcedd8018090",
+      "e8618c4f-45a8-418c-a698-83246daf38ca",
+      "22ecf63f-1fcc-43e4-9d0e-c25a2a973266",
+      "77bdcf2b-7553-4818-805a-a67644f987f4"
+    ]
+  },
+  {
+    "r_id": "5e972830-7aaf-4e26-9dc2-b449a04e930f",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "72ae02cf-9242-4939-adfa-d6ea33331884",
+    "users_reporting_mngr": [
+      "49161d11-1cef-4ed1-91c8-be96a91aa9b1",
+      "6f08206f-8d94-4d15-bc14-f7ae2aec5a77",
+      "98077112-66c2-473a-a6ab-90b0c5152afd",
+      "f3544676-5d30-4b07-b70e-e18190d6fdf9",
+      "147c5249-5bfe-4524-95c4-e9ecc4d49413"
+    ]
+  },
+  {
+    "r_id": "8cb57429-9002-4728-ada8-22c115219273",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "986c22e8-bd40-4822-b612-23c735a3206a",
+    "users_reporting_mngr": [
+      "f1433d2e-aa06-479b-a4b7-1f4218ebf304",
+      "2e659201-40b9-4311-9578-aa39c05ae499",
+      "e3b3bc8a-f902-4114-b01a-917e58c6d0f7",
+      "cf6f96a7-fa71-4adc-a2bc-da86e7b1e209",
+      "1254b9b0-4e0e-40e6-a8ea-b0d1028206a5"
+    ]
+  },
+  {
+    "r_id": "6bd3af56-0364-4efc-b2d8-70ab00048ded",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "c99d99a1-4c23-45c6-9a37-b2a29f96f928",
+    "users_reporting_mngr": [
+      "c39e5ca7-fed8-4053-a363-7ea32f9ae2e5",
+      "f67601ce-55f5-4dee-b152-1755fbbff89c",
+      "5330a6ac-03e7-46eb-ab0c-2be057744e66",
+      "d941d91a-7123-408e-8772-b8235196f569",
+      "f6d1f778-e1c2-4f57-a1aa-a7cd903f3d5b"
+    ]
+  },
+  {
+    "r_id": "3ef63a3c-3dc1-4a68-a04c-3b6ae24cb0ed",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "d78da9cb-4ccb-48c3-984b-cb821d768138",
+    "users_reporting_mngr": [
+      "03eed997-9add-47af-912b-424d836a62ed",
+      "c22c0dae-3c33-480f-9671-113efa13c31b",
+      "82f94853-3b0e-441e-bc04-5340c357b194",
+      "6e5d153c-a47a-4cd9-b880-eeabafb6ffc1",
+      "8a40d095-9670-4e96-83bb-7b57babadead"
+    ]
+  },
+  {
+    "r_id": "9e1da1b9-f465-4ad9-be6b-0c696fcdd992",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "7b99f033-16e8-463d-8879-9d05d9ba50e1",
+    "users_reporting_mngr": [
+      "6721bd13-112e-44d0-a929-d9f3a89711d6",
+      "04bc164a-f3bf-43e4-92e6-a280646967d2",
+      "94322456-2819-4f01-b49a-e673c5fa3fea",
+      "04bfacfa-48b8-4ea9-b9c0-7e5f55a4b2a4",
+      "2fe2f2ff-607b-48b1-b2de-12b03b9e8bde"
+    ]
+  },
+  {
+    "r_id": "7b02a4e5-d8f2-44c0-89aa-2c4f3b8ec9b6",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "c1fddbb4-0895-49e0-9373-f715c3ff5207",
+    "users_reporting_mngr": [
+      "4e3484cc-50db-412f-92a8-dcf981f834b2",
+      "16c906dc-59fd-48c0-aafb-572569d3e62c",
+      "2e1d27c2-c94d-4b6d-bb07-25f31454f711",
+      "ecad4179-a53a-4387-ab5d-755996840f48",
+      "4bac42ba-c0c0-409e-a547-372d0832c226"
+    ]
+  },
+  {
+    "r_id": "b9a9e429-dc54-4863-8594-48a88e683b54",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "784d46af-ab16-4640-84e0-379383daaf30",
+    "users_reporting_mngr": [
+      "0f8c0dfd-d83e-4a77-adf9-283c0a0abecc",
+      "f94edee3-4458-4a50-abbc-576a4f69cd93",
+      "f48535b5-3430-408e-ab70-eff750a1b339",
+      "f7055f5a-1431-4aec-b9f9-ffb3b6a873f1",
+      "615b576b-1467-48d8-9d27-584cc891eac5"
+    ]
+  },
+  {
+    "r_id": "85a15f67-7f5d-489e-8cc6-6d60a38f5c81",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "2d1f6c4a-960b-4558-9ad6-841d0061dd56",
+    "users_reporting_mngr": [
+      "2ca4a643-d346-4a2c-a8f8-11b5315fed91",
+      "eb336c91-1644-4ac0-a1e4-ae1a51a4e9d2",
+      "9afa53c3-458f-4eed-b3e7-b24fdf9e29ad",
+      "1fbf7c3c-293f-4805-b6f4-2ba40a27277e",
+      "ae9ce541-915c-492b-ba84-96269a22eb9f"
+    ]
+  },
+  {
+    "r_id": "09c83d81-8969-41dc-85fc-900ab21bc123",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "a51710e4-0a3b-4fb2-90cc-54b815e21034",
+    "users_reporting_mngr": [
+      "70ef5c99-9ef6-4b82-a7c1-013dad7d2edc",
+      "469856b1-e268-4a17-9fab-cc5e7fa6bc36",
+      "3a1e3505-51c3-4b53-9047-d90b4b5b0c78",
+      "fb19568e-ef8b-44e5-8488-ad25ec262fc8"
+    ]
+  },
+  {
+    "r_id": "dbc07a7c-0851-4e12-9aa3-b3dbeeb14d7c",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "c816d049-fa7c-4db8-956a-d579a8286c4b",
+    "users_reporting_mngr": [
+      "07d93e1c-14f7-471d-8135-ce93dd6cfbc3",
+      "2fb3c859-af1f-4605-a7ec-e107a939a44c",
+      "fd4b4c78-7c6e-4bfb-bb63-3f9d69d61def",
+      "7de17309-b36f-47e7-846c-f6591736cf6b"
+    ]
+  },
+  {
+    "r_id": "75f5f39f-983d-429e-bcd7-c6155d2896f5",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "22dd7093-188b-419e-a600-7710d57a4588",
+    "users_reporting_mngr": [
+      "db6aadb3-e7cd-4dee-b603-a14ff51a46f5",
+      "4dfe1849-0828-4690-95de-25a1fdbc13ae",
+      "3ac36c49-f4ac-4f57-ade8-7279a5def386",
+      "29418f78-e9f8-40a2-8e30-6110b4eb3471"
+    ]
+  },
+  {
+    "r_id": "3e84ffde-d258-4db0-b2cb-280a6d9106a5",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "20543008-dbf9-4f1b-978e-c625f8625219",
+    "users_reporting_mngr": [
+      "7e08a0b6-6291-4c16-9539-3a41c0db2640",
+      "e6e81639-4e88-4f63-9317-cc78addcae3a",
+      "d83d79b2-2cbf-436e-af7f-f25b169ab985",
+      "de102cf1-7ba2-4a59-ba1e-dfb2d84fa9f3"
+    ]
+  },
+  {
+    "r_id": "a02e85a9-8644-49fa-91f9-49c6c16ce18b",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "2134ca6d-c8a2-4bfb-a144-92d2347e5945",
+    "users_reporting_mngr": [
+      "12e1fd0e-b6b9-4490-9a9f-882c4f38240f",
+      "096c70c9-c599-4d29-9019-872a434c2efc",
+      "7896511c-5497-450a-87f0-af1f533866af",
+      "685f5699-c086-4ab0-ba3b-eba95cc62404"
+    ]
+  },
+  {
+    "r_id": "59c9d7eb-88bd-401e-9a5f-799823edd2fd",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "5f0828c6-4937-4285-b16f-a11c07f09f84",
+    "users_reporting_mngr": [
+      "c3f21812-7be1-4682-ad20-ba03402afc7e",
+      "b41219c7-8b8d-408b-9060-4f9388c16800",
+      "7c99394e-6de7-45b6-bf73-a9c07817ae80",
+      "15c6da14-471e-4760-882f-f06ea6cb6998"
+    ]
+  },
+  {
+    "r_id": "ae731ea9-e437-4a2d-bfe6-5ab1c5ac97a7",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "0d3fd8af-af75-42ba-9089-ca7eef9d573d",
+    "users_reporting_mngr": [
+      "ffb14359-522f-4933-a7e1-a7703799c095",
+      "3c38b557-53c0-4865-bbb6-50114e72d3e7",
+      "9477785f-177d-4ec4-81e8-5f49c5d47ad7",
+      "2d1d8701-2cdc-44c0-8436-308c81ef7e7c"
+    ]
+  },
+  {
+    "r_id": "5e15f7c8-e807-433d-8313-dd905da15943",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "f7bb5080-ca37-4527-9eea-4134410cf5c5",
+    "users_reporting_mngr": [
+      "f36a2fcf-0dc7-4f82-a539-e40892a391a2",
+      "fafa1530-905e-4b82-a9f4-659f1521d8c2",
+      "b7b81b6b-833f-4cc9-8da3-217bbcea32b9",
+      "7cc5c1de-3666-4e5d-9dc1-bdf4646169fc"
+    ]
+  },
+  {
+    "r_id": "2b201baf-78d9-4f21-bbbf-4c14412083b0",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "3c0dec5c-840c-4db5-9d2c-2349a873e2ae",
+    "users_reporting_mngr": [
+      "5f324571-7e1c-4406-bd92-c85325a9373a",
+      "35c2c541-1e74-406e-88dc-536a7a17bc79",
+      "ea80b93b-4210-4873-ac74-e337deeafff3",
+      "52525b49-9ff1-4da0-b5ad-73a7fc1e8d5d"
+    ]
+  },
+  {
+    "r_id": "22d2d6f2-8e00-4fdf-aa04-8bfceb476064",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "3411c743-748a-46f7-b38b-d7585aa94b97",
+    "users_reporting_mngr": [
+      "b54de368-1d37-4a5f-908c-54e6b02c80d4",
+      "f232e51d-0bf3-4969-9dca-69dcbbc71f66",
+      "0badcd4e-79b1-43a8-a390-17506d89b788",
+      "193abe40-fa91-455f-a8eb-bc51d7842bef"
+    ]
+  },
+  {
+    "r_id": "103e6ad1-2086-46e4-931d-2d1325fc7fd1",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "e843ce35-37cb-4589-85bf-f7a8eb945184",
+    "users_reporting_mngr": [
+      "b5ac8a2f-ff42-4f1a-8fcd-5c71062bffb0",
+      "16bc7190-ef9d-42d3-9c61-997fabc050f5",
+      "45f316e9-9e43-4054-b06f-1a8d6dc14614",
+      "bce194ab-7234-4566-a8bd-a13778c82d9f"
+    ]
+  },
+  {
+    "r_id": "386c5cce-c47c-4ec2-bcd1-936b36a1463a",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "bbc50c4b-4456-4e7d-8ecc-503542bd5c62",
+    "users_reporting_mngr": [
+      "7b0a0bda-f10e-4070-9ad9-f667a9feb5fd",
+      "e57d2f72-6e1e-4332-86df-2c6324dc784a",
+      "4b0c204c-66ca-4a2c-b50a-645145ff4795",
+      "f0823e65-3cd3-4227-8482-a007b7d4d944"
+    ]
+  },
+  {
+    "r_id": "2499c626-fa62-4b36-aa23-15082b7b242a",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "891cebf2-f9cf-49e1-b4bc-e31760e4e7c2",
+    "users_reporting_mngr": [
+      "707bb5b0-a252-419f-892a-e4d93d3ab781",
+      "c3dc5665-fec1-41b7-82d0-4784405f1f46",
+      "d8b921f8-2183-4792-a598-42cb952d1820",
+      "32646baf-d94b-4979-b881-76e8859fa6c6"
+    ]
+  },
+  {
+    "r_id": "8a163621-29b0-43b2-8330-aabdee288502",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "672659a5-550c-4cea-ae82-6e61101c87d0",
+    "users_reporting_mngr": [
+      "f6e1c8d4-dd44-4bca-8604-4aefbccf6574",
+      "4fad74c4-b428-4e91-9c89-e7f9d93dc4a8",
+      "56c8457e-11a9-47ee-b523-e55ade7bc6d9",
+      "d4c22d84-f07a-488e-915b-4f4b6858c66c"
+    ]
+  },
+  {
+    "r_id": "63a0605b-bb59-47d1-9fb9-a399fddf144d",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "64e33753-33fe-441c-bd29-6182674b623a",
+    "users_reporting_mngr": [
+      "0f046703-e5c2-4309-bba6-1235d494c447",
+      "6d17cd7a-f1ec-4885-a4f3-a3370845bc14",
+      "79525967-1af8-48ea-9022-d20d13664c00",
+      "a8bcc2c2-7003-4148-8107-5308aa112b62"
+    ]
+  },
+  {
+    "r_id": "6abc2a9e-3cf6-49c1-8011-47f304ac5831",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "4750bd57-1407-4554-857a-cd08a4e8309b",
+    "users_reporting_mngr": [
+      "06e272ec-550b-401c-9a51-66a2970b9985",
+      "8e227c77-fb82-4004-bc93-2f0d2c5e526b",
+      "0433041a-cbde-4ea5-88c5-ea46fe5bdd75",
+      "23e7fd98-839f-42f7-b6a7-81faa2f9fc87"
+    ]
+  },
+  {
+    "r_id": "de6d0f0d-5958-41fe-be9b-8b59f89639ce",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "ded00c75-6f4e-497c-8bd5-3506d8d36d95",
+    "users_reporting_mngr": [
+      "a7901688-e053-4dac-9f17-218dd3e08b88",
+      "e72a7f2b-3720-4964-95d2-78dfe3b98fb8",
+      "4a2b68c0-85c8-499d-bd1a-ee4f1ac67a4f",
+      "4e3fb6df-d3ff-4c47-8986-1ae62b748a88"
+    ]
+  },
+  {
+    "r_id": "d13cf96e-e6bd-4f01-825a-ae22ede3bcd9",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "bd81bed8-37ba-4366-add3-3e0d5c025fec",
+    "users_reporting_mngr": [
+      "f8467faf-b5a6-4148-ae30-3c153663204a",
+      "e418faa1-9702-4d61-b2e7-63266d1cbff7",
+      "25e885e1-2507-4bc9-9c9d-20ee6d55e28f",
+      "649a5aea-2bbd-452b-88bb-e68fd4198cd5"
+    ]
+  },
+  {
+    "r_id": "bbb2412b-10d4-4e80-ba53-f06063e5e37a",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "d7348314-3a5b-4083-8479-68edea828dfe",
+    "users_reporting_mngr": [
+      "e26704ef-7bc2-41a9-bd03-a2df27e5de28",
+      "ff692373-e92e-4019-9d41-398133b88173",
+      "3dd4da12-5b91-48e3-a8a5-718acae267f1",
+      "246f9c19-aff1-4063-8093-960fd4437c69"
+    ]
+  },
+  {
+    "r_id": "9cb36b72-912a-46d3-bc34-4aaafbfb1d27",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "ea590c1f-c34e-4b80-a62f-a8bf22d655ba",
+    "users_reporting_mngr": [
+      "c1ee277d-382c-466e-9235-cc98e00dfca3",
+      "70ba7f95-36e0-43fd-8d64-45deffac4761",
+      "e4f1f2d0-f8a3-41c4-a9f4-a2ed69f2b3ba",
+      "6b2209a1-89fb-42be-83db-ba6c116e218a"
+    ]
+  },
+  {
+    "r_id": "c01cdf14-2261-4c58-8c84-8fec76cd7fce",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "b9e73fdf-d941-4120-9dd1-a09208fef4e2",
+    "users_reporting_mngr": [
+      "ab70440b-9345-4ff3-a1b9-3cc4c4a18a70",
+      "7af59bce-b095-4bc0-acdd-8ed01ddefae8",
+      "e2518ea7-3602-4475-9fdb-e0076b771eab",
+      "c9238ddf-70e5-4899-b028-e4b7a03334fc"
+    ]
+  },
+  {
+    "r_id": "7097c16d-c001-4d79-8a3e-bef533a795bd",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "7aea1f0f-fb37-497a-871e-f49d2e0ca628",
+    "users_reporting_mngr": [
+      "9265c988-ad43-4802-8c0c-5803e0ea424f",
+      "3b55e710-169e-4e8c-ad0b-9ca9538d84d6",
+      "da151f34-614f-4138-b249-2d29b9a0cde1",
+      "91d8faef-0fa2-4f47-958f-73bac1144a28"
+    ]
+  },
+  {
+    "r_id": "9fd10325-2c06-4309-9e75-df7634317f0a",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "90be0e4a-8dbf-4d4e-bc81-dc4488114bff",
+    "users_reporting_mngr": [
+      "484e8a46-eb3a-40b0-b450-b523c145cbbb",
+      "5b0e2016-0e8b-4f9f-9beb-5034f0288f4e",
+      "bd5640c3-c357-408d-8dc6-4f1905122452",
+      "9ffee117-85f4-441e-8524-00bcb37fad71"
+    ]
+  },
+  {
+    "r_id": "96af2689-f02a-4dca-b113-596430ba5daa",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "4d59cf7f-3035-4293-905f-5d414aced714",
+    "users_reporting_mngr": [
+      "295a9c20-43e3-41cd-9bc9-e3af083cebc3",
+      "dc5ba7d5-e443-4ff6-93e9-7ea8292a25a8",
+      "3f5547ef-ff0b-434e-8e7e-7255bab4cf36",
+      "7d1babea-6b70-4efc-b1ba-abeef5fa690e"
+    ]
+  },
+  {
+    "r_id": "9c939c83-736d-494d-b4df-2f4fe417d8f6",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "c5588284-f730-4a35-ac14-3de16b085fea",
+    "users_reporting_mngr": [
+      "c451938c-87d5-47e7-87df-55691da136f2",
+      "651c4815-eb30-457b-b867-ca611e3688de",
+      "9de3b372-2ae9-45f1-aa8d-ba9dc342189a",
+      "2d90401d-5c00-4229-bf49-72478ba00110"
+    ]
+  },
+  {
+    "r_id": "c6f3487e-420d-486e-b3b3-a790ee9d2cb6",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "5eadd787-7eb4-4f1f-900c-dff1908738bf",
+    "users_reporting_mngr": [
+      "0b07f3e9-f98b-485a-b4a7-09bc0248564c",
+      "2e5b8b46-4eea-4632-b7f6-b748e78761a1",
+      "dacb780b-bc02-4da4-b1ab-cdad3f2d97da",
+      "5b7211e7-48ad-4403-bc2d-6c3d3cc2d971"
+    ]
+  },
+  {
+    "r_id": "d95dca28-6f7d-4fe1-830e-b99a93ac56b3",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "457c4c6d-f01a-4b64-944d-dfadbf2631fb",
+    "users_reporting_mngr": [
+      "6fbed644-fcca-4bae-868f-2c93c5711070",
+      "116081bf-a8d4-476e-833a-a4d6dd1ab184",
+      "bd9e909f-cc2d-47dd-8bb7-728d5dfced74",
+      "77f25836-6aab-4530-ba9c-59e5e6d19ba2"
+    ]
+  },
+  {
+    "r_id": "87baaa36-877b-4f73-9c96-dd7692340f0c",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "276ddd01-126e-47a9-95f7-f82b5369b2d3",
+    "users_reporting_mngr": [
+      "8d5ad0d5-d47e-40c3-92ee-3c5e64590631",
+      "990a9f29-ed19-468e-b214-64d5d1fc8dda",
+      "4a1317f1-40bf-49fa-8c83-9ff3cec47323",
+      "52e3ecb9-2d61-4c6e-9e97-fba6de80cd6b"
+    ]
+  },
+  {
+    "r_id": "7cc931fb-bbd8-4aa1-a506-34063cee3bdd",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "6d35a806-ddca-400a-a581-dbf8557d4d2f",
+    "users_reporting_mngr": [
+      "cb6297a9-c193-4f7a-af9c-3b7513dff65d",
+      "bfaa4ae7-ac5c-43a7-b408-e98f34a54dee",
+      "342e37b3-ea71-4cb4-9994-8b5203476703"
+    ]
+  },
+  {
+    "r_id": "78176148-d441-4c71-8a52-e5ff8b0ac539",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "b4398dc1-6e87-464a-91cc-ebfbcc1f2be0",
+    "users_reporting_mngr": [
+      "ff820961-3bd8-429d-819f-f50a29850536",
+      "2581139c-2be7-4f3d-a8d4-a8b60ae6a868",
+      "ae4733ae-b8d3-46e1-a923-807979552474"
+    ]
+  },
+  {
+    "r_id": "800de0b1-49fa-4871-861c-77824a88d4b5",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "f77db7d0-6f05-4d2c-b87e-456c2810c05e",
+    "users_reporting_mngr": [
+      "62a5b854-9922-4220-be3c-3697092574d9",
+      "b36ad7cf-0ac8-41be-8344-4ce2bfda1d99",
+      "96a61550-5706-4d6a-87b6-9421cda2f197"
+    ]
+  },
+  {
+    "r_id": "2f0ac581-9949-4671-a9ab-ff2f9068dd9b",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "3432f2f9-f0bc-42c1-b8d8-27de44cbaed4",
+    "users_reporting_mngr": [
+      "98b3be08-8b4c-44d1-9fb4-ccd0b1e58987",
+      "17daf7ee-1cc2-4032-a35c-73e55c1b59cf",
+      "e6e90bef-76b3-4933-8385-9b5014dbe957"
+    ]
+  },
+  {
+    "r_id": "55bff8cc-94db-42d1-af5d-9b9d1b24c89e",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "4591ba0c-e076-4d6b-93d4-958aa76bd40c",
+    "users_reporting_mngr": [
+      "8b7bcd29-bafa-43b3-8d12-2941b20b06be",
+      "b4610dfc-a5c6-4ad7-8ba8-1b0a364d288d",
+      "7eccfc42-e217-4067-9f59-b95ed7263881"
+    ]
+  },
+  {
+    "r_id": "329014e8-0bcf-4e58-9973-648e93355850",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "66221935-9e58-4630-9e4a-dd95306f1097",
+    "users_reporting_mngr": [
+      "7ae727e8-5fd8-4da0-9672-5763c3d0359e",
+      "f1673024-6e1a-4384-ba0d-112e713daca7",
+      "d6b091bd-a352-4a06-b7c1-967204996b80"
+    ]
+  },
+  {
+    "r_id": "302af747-2bf7-40e0-b77c-3092ac3f7a32",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "b59a0e9d-93c8-4d95-8424-325e9b28ead4",
+    "users_reporting_mngr": [
+      "c36347b0-d2f8-4507-8d38-040a0991db62",
+      "c4c63743-8027-478d-af21-24b6d0a11682",
+      "f7bd50ae-7192-44a3-8307-9bdfdc9b5be2"
+    ]
+  },
+  {
+    "r_id": "7b4cb52f-8452-48e7-a56b-9ceadef18a27",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "a15fb69b-c832-47e4-96f1-872594fcce73",
+    "users_reporting_mngr": [
+      "aa89b6b0-732e-4234-bb61-68f8d03a34ec",
+      "33fc26c9-222c-4d58-86de-e4136c93a661",
+      "34462f43-23ac-45f6-ab93-87ba61de0217"
+    ]
+  },
+  {
+    "r_id": "de219c0a-60dd-46d0-987b-2260a029d9d0",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "b4c00088-fdb2-432c-9503-7034249c99a6",
+    "users_reporting_mngr": [
+      "d95e9433-328f-474d-855e-0018e5163355",
+      "77154585-4aea-4d6e-8387-dd8f508876b1",
+      "bf7551d7-271e-44f3-885a-b9bf705c26dd"
+    ]
+  },
+  {
+    "r_id": "73bbeda7-d0d4-468b-988e-4006eb46f5b3",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "7e771ce2-1723-4a0d-a2b8-f90f35309c19",
+    "users_reporting_mngr": [
+      "133e80f0-6509-4381-959c-a25480f8ed72",
+      "6e6e5014-30d0-446f-8f14-3ed9a2553ee9",
+      "bdb1eb70-85e0-448d-9347-aec1aba9e8eb"
+    ]
+  },
+  {
+    "r_id": "6222e711-b688-4f53-b3bf-74c44b66ec3e",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "3925a93c-b45d-464e-a0d8-20cc322ee9ad",
+    "users_reporting_mngr": [
+      "8400ece4-a412-41e8-bf77-9536148b368a",
+      "4b279107-cbfe-46d5-9007-cf2b638a6df0",
+      "4b0b9c0d-b181-4540-8e8a-0d9a5b0b5472"
+    ]
+  },
+  {
+    "r_id": "fc461c23-38f7-412e-a5e1-a3f727a0e34e",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "84a18e7f-bbfd-4be5-a1f6-f85545501e33",
+    "users_reporting_mngr": [
+      "24af4b12-75f6-43da-8af3-9e043120f63c",
+      "501c6077-c295-48f6-91ad-342bfed47ed9",
+      "fbc49681-649f-4a98-b5b0-5df3cf4a5680"
+    ]
+  },
+  {
+    "r_id": "acc3338d-1920-4216-9cd9-ee66d134be27",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "8cfa669c-7798-425e-b8cc-c8518921d881",
+    "users_reporting_mngr": [
+      "44588519-cdba-481a-8577-388597654c24",
+      "59243f12-a274-417e-8875-6e98c0b2e886",
+      "155da6cf-30a8-4820-91a0-5480cceeeced"
+    ]
+  },
+  {
+    "r_id": "3ce290f6-6629-41f9-b682-b489acd9c466",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "e2f557f1-706c-4c80-a6cf-857f2d37648c",
+    "users_reporting_mngr": [
+      "25f2045e-b152-4fcf-91be-7fc2a373dd78",
+      "8301fd78-91ee-436c-a23a-30ee60ef544c",
+      "edfa3cd9-3b54-40c3-b6b1-ff3cc245b1d7"
+    ]
+  }
+]
