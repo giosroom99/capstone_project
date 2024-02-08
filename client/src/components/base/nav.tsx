@@ -34,12 +34,14 @@ export default function NavigationBar() {
                   </a>
                 </li>
               </Link>
+              <Link to={"/chat"}>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Feedback
+                  </a>
+                </li>
+              </Link>
 
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Login
-                </a>
-              </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   Register
@@ -49,6 +51,12 @@ export default function NavigationBar() {
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   Logout
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <i className="bi bi-bell-fill"></i> Activity
                 </a>
               </li>
             </ul>
