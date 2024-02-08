@@ -1,0 +1,119 @@
+[
+  {
+    "chat_ID": "1",
+    "sender_ID": "employee_1",
+    "recipient_ID": "manager_1",
+    "message_text": "Hi, I have a question about the upcoming project.",
+    "timestamp": "2024-02-08T12:30:00",
+    "is_manager_response": false,
+    "is_read": true
+  },
+  {
+    "chat_ID": "2",
+    "sender_ID": "manager_1",
+    "recipient_ID": "employee_1",
+    "message_text": "Sure, what would you like to know?",
+    "timestamp": "2024-02-08T12:35:00",
+    "is_manager_response": true,
+    "is_read": false
+  },
+  {
+    "chat_ID": "3",
+    "sender_ID": "employee_1",
+    "recipient_ID": "manager_1",
+    "message_text": "I need clarification on the project timeline.",
+    "timestamp": "2024-02-08T12:40:00",
+    "is_manager_response": false,
+    "is_read": false
+  },
+  {
+    "chat_ID": "4",
+    "sender_ID": "manager_1",
+    "recipient_ID": "employee_1",
+    "message_text": "Certainly, let me provide you with the details.",
+    "timestamp": "2024-02-08T12:45:00",
+    "is_manager_response": true,
+    "is_read": false
+  },
+  {
+    "chat_ID": "5",
+    "sender_ID": "employee_1",
+    "recipient_ID": "manager_1",
+    "message_text": "Thank you for your prompt response. I appreciate it. Can you please share the milestones and deadlines for the project?",
+    "timestamp": "2024-02-08T13:00:00",
+    "is_manager_response": false,
+    "is_read": false
+  },
+  {
+    "chat_ID": "6",
+    "sender_ID": "manager_1",
+    "recipient_ID": "employee_1",
+    "message_text": "Of course! The project is divided into four main phases. The first phase involves project planning and is expected to be completed by the end of this month. The subsequent phases include development, testing, and final implementation, each with its own set of tasks and deadlines. I will send you a detailed project timeline shortly.",
+    "timestamp": "2024-02-08T13:15:00",
+    "is_manager_response": true,
+    "is_read": false
+  },
+  {
+    "chat_ID": "7",
+    "sender_ID": "employee_1",
+    "recipient_ID": "manager_1",
+    "message_text": "Great, that helps. I also wanted to discuss the resource allocation for the project. Are there specific team members assigned to each phase, and do we have all the necessary resources in place?",
+    "timestamp": "2024-02-08T13:30:00",
+    "is_manager_response": false,
+    "is_read": false
+  },
+  {
+    "chat_ID": "8",
+    "sender_ID": "manager_1",
+    "recipient_ID": "employee_1",
+    "message_text": "Excellent question. Yes, we have a dedicated team for each phase. I've ensured that the required skills and expertise are available for smooth progress. I will provide you with a detailed list of team members and their roles shortly. If you have any specific preferences or concerns, feel free to let me know.",
+    "timestamp": "2024-02-08T13:45:00",
+    "is_manager_response": true,
+    "is_read": false
+  },
+  {
+    "chat_ID": "9",
+    "sender_ID": "employee_1",
+    "recipient_ID": "manager_1",
+    "message_text": "That sounds good. I appreciate your proactive approach to team organization. Another thing on my mind is the client communication plan. How are we planning to keep the client updated on the project's progress?",
+    "timestamp": "2024-02-08T14:00:00",
+    "is_manager_response": false,
+    "is_read": false
+  },
+  {
+    "chat_ID": "10",
+    "sender_ID": "manager_1",
+    "recipient_ID": "employee_1",
+    "message_text": "A crucial aspect indeed. We will establish regular status meetings and provide weekly progress reports to the client. Additionally, we have set up a communication channel where the client can reach out for any immediate concerns. I will include the detailed communication plan in the information I send you shortly. Is there anything specific you'd like to add to the plan?",
+    "timestamp": "2024-02-08T14:15:00",
+    "is_manager_response": true,
+    "is_read": false
+  },
+  {
+    "chat_ID": "11",
+    "sender_ID": "employee_1",
+    "recipient_ID": "manager_1",
+    "message_text": "That sounds comprehensive. I don't have any specific additions at the moment, but I'll review the plan once you share it and let you know if I have any suggestions. Thanks for addressing my concerns so far.",
+    "timestamp": "2024-02-08T14:30:00",
+    "is_manager_response": false,
+    "is_read": false
+  },
+  {
+    "chat_ID": "12",
+    "sender_ID": "manager_1",
+    "recipient_ID": "employee_1",
+    "message_text": "You're welcome! I'm here to ensure a smooth workflow and address any questions or concerns you may have. Feel free to reach out at any time. Is there anything else on your mind regarding the project or any other matter?",
+    "timestamp": "2024-02-08T14:45:00",
+    "is_manager_response": true,
+    "is_read": false
+  },
+  {
+    "chat_ID": "13",
+    "sender_ID": "employee_1",
+    "recipient_ID": "manager_1",
+    "message_text": "Not at the moment. I appreciate your support and the detailed information you've provided. I'll go through the project timeline, team details, and communication plan once I receive them. If any questions arise during my review, I'll be sure to reach out. Thanks again!",
+    "timestamp": "2024-02-08T15:00:00",
+    "is_manager_response": false,
+    "is_read": false
+  }
+]
