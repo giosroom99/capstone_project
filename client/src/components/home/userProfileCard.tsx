@@ -1,17 +1,16 @@
 import { useEffect, useState } from "react";
 import profileImage from "../../assets/img/profile.jpg";
-import { api } from "../../utils/apiCall";
 
 export default function ProfileCard(props) {
-  const userData = props.useData;
-  if (!userData) {
+  const userInfo = props.userInfo;
+  if (!userInfo) {
     return (
       <div>
         <h1>OOPS! we couldnt get your info</h1>
       </div>
     );
   }
-  console.log(userData);
+  console.log(userInfo);
   return (
     <div>
       <div className="card mb-3" style={{ maxWidth: "540px;" }}>
@@ -27,7 +26,7 @@ export default function ProfileCard(props) {
             <div className="card-body">
               <h5 className="card-title">
                 {" "}
-                {userData.f_name} {userData.l_name}
+                {userInfo.f_name} {userInfo.l_name}
               </h5>
               <p className="card-text">
                 This is a wider card with supporting text below as a natural
@@ -35,7 +34,7 @@ export default function ProfileCard(props) {
                 longer.
               </p>
               <p className="card-text">
-                <small className="text-body-secondary">{userData.email}</small>
+                <small className="text-body-secondary">{userInfo.email}</small>
               </p>
               <p className="card-text">
                 <small className="text-body-secondary">
