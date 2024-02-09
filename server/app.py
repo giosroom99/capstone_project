@@ -1,12 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 import datetime
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.feature_extraction.text import CountVectorizer
-import pandas as pd
-import pickle
-from preprocessing import preprocess
 import db
+import feedback_predicter as fp
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -50,27 +46,14 @@ def upload_newmessage():
 
     print("Posting message")
     db.post_message(message)
+
+    if not message["is_manager_response"]:
+        sentiment = fp.predict_sentiment(message["message_text"])
+        return sentiment, 200
+
     return "Success", 200
 
-@app.route('/predict', methods=['POST'])
-@cross_origin()
-def predict():
-    data = request.get_json()
-
-    text = "Manager not doing a good job."
-    text = preprocess(text)
-
-    input_data = cv.transform([text])
-
-    res = model.predict(input_data)[0]
-    return jsonify(res)
-
 if __name__ == "__main__":
-    model = pickle.load(open('MNB_feedback_model.pkl', 'rb'))
-    cv = pickle.load(open('countvectorizer.pkl', 'rb'))
-
-    #app.config['MONGO_URI'] = db.getConnectionString()
-    # db.connectToDB()
     app.run(port=5000, debug=True)
 
 

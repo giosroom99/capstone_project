@@ -6,9 +6,6 @@ from bson.json_util import dumps
 
 load_dotenv()
 
-def get_connection_string():
-    return os.getenv("DB_URI")
-
 def get_users():
     print("Getting users collection")
     users = db["Users"].find()
@@ -34,6 +31,9 @@ def post_message(message):
     chats = db["Chat"]
     chats.insert_one(message)
     print("Sucessfully inserted message into database")
+
+def get_connection_string():
+    return os.getenv("DB_URI")
 
 def connect_to_db():
     print("Starting to connect to DB table FeedBack")
