@@ -41,12 +41,13 @@ export default function NavigationBar() {
                   </a>
                 </li>
               </Link>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Register
-                </a>
-              </li>
+              <Link to={"/"}>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Login
+                  </a>
+                </li>
+              </Link>
 
               <li className="nav-item">
                 <a className="nav-link" href="#">

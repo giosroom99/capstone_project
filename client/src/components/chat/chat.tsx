@@ -27,7 +27,6 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
     fetchData();
   }, []);
 
-  console.log(fakeConvo);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newMessage = {
@@ -47,12 +46,12 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
   };
 
   return (
-    <div className="container bg-dark border border-2 rounded mt-3">
+    <div className="container bg-dark border border-2 rounded mt-1">
       <div
         id="chat-container"
-        className="mb-3"
+        className="mb-5"
         style={{
-          maxHeight: "350px",
+          maxHeight: "420px",
           overflowY: "auto",
         }}
       >
@@ -68,7 +67,7 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
                   : "alert alert-primary"
               }
             >
-              {msg.message_text}
+              <p>{msg.message_text}</p>
               <p
                 className={`${
                   msg.sender_ID !== senderID
