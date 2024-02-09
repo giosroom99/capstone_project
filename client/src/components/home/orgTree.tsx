@@ -1,5 +1,15 @@
 export default function OrganizationThree(props) {
   const OrganizationData = props.orgData;
+  
+
+  if (!OrganizationData) {
+    return (
+      <div>
+        <h1>Nothing to see here</h1>
+      </div>
+    );
+  }
+
   return (
     <div className="container  mt-3 text-center">
       <div className="row justify-content-center">
