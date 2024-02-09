@@ -31,6 +31,6 @@ if __name__ == "__main__":
     model = pickle.load(open('MNB_feedback_model.pkl', 'rb'))
     cv = pickle.load(open('countvectorizer.pkl', 'rb'))
 
-    app.run(port=5000)
+    app.run(port=5000, debug=True)
 
 
