@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
 import pickle
 from preprocessing import preprocess
+import db
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -31,6 +32,8 @@ if __name__ == "__main__":
     model = pickle.load(open('MNB_feedback_model.pkl', 'rb'))
     cv = pickle.load(open('countvectorizer.pkl', 'rb'))
 
+    #app.config['MONGO_URI'] = db.getConnectionString()
+    db.connectToDB()
     app.run(port=5000, debug=True)
 
 
