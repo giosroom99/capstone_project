@@ -11,9 +11,20 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+@app.route('/user/<user_id>', methods=['GET'])
+@cross_origin()
+def get_user(user_id):
+    return "Success", 200
+
+@app.route('/user/<user_id>/chat', methods=['GET'])
+@cross_origin()
+def get_chats(user_id):
+    return "Success", 200
+
+@app.route('/chat', methods=['POST'])
+@cross_origin()
+def upload_newmessage():
+    return "Success", 200
 
 @app.route('/predict', methods=['POST'])
 @cross_origin()
