@@ -1,5 +1,6 @@
 import Chat from "./chat";
 import { api } from "../../utils/apiCall";
+import Analysis from "./sentimentAnalysis";
 
 const ChatComponent = () => {
   const managerId = "yourManagerId";
@@ -28,13 +29,21 @@ const ChatComponent = () => {
         )}
       </h1>
       <div className="row justify-content-center">
-        <div className="col-9">
+        <div className="col-10">
           <Chat
             managerId={managerId}
             employeeId={employeeId}
             onSubmitMessage={handleSubmitMessage}
           />
         </div>
+        {isManager === true ? (
+          <div className="col-2">
+            <h5 className="text-center">Positivity Analyzer</h5>
+            <Analysis />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
