@@ -11,6 +11,11 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
+@app.route('/user', methods=['GET'])
+@cross_origin()
+def get_users():
+    return db.get_users(), 200
+
 @app.route('/user/<user_id>', methods=['GET'])
 @cross_origin()
 def get_user(user_id):
@@ -44,7 +49,7 @@ if __name__ == "__main__":
     cv = pickle.load(open('countvectorizer.pkl', 'rb'))
 
     #app.config['MONGO_URI'] = db.getConnectionString()
-    db.connectToDB()
+    # db.connectToDB()
     app.run(port=5000, debug=True)
 
 
