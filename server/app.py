@@ -61,8 +61,11 @@ def attempt_login():
     password = data.get("password")
 
     res = db.attempt_login(email, password)
-    return res, 200
 
+    if res == "":
+        return "Login attempt failed", 401
+    else:
+        return res, 200
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
