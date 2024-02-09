@@ -49,9 +49,23 @@ def upload_newmessage():
 
     if not message["is_manager_response"]:
         sentiment = fp.predict_sentiment(message["message_text"])
-        return sentiment, 200
+        return sentiment, 201
 
-    return "Success", 200
+    return "Success", 201
+
+@app.route('/login', methods=['POST'])
+@cross_origin()
+def attempt_login():
+    data = request.get_json()
+    email = data.get("email")
+    password = data.get("password")
+
+    res = db.attempt_login(email, password)
+
+    if res == "":
+        return "Login attempt failed", 401
+    else:
+        return res, 200
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)

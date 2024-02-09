@@ -8,7 +8,7 @@ load_dotenv()
 
 def get_users():
     print("Getting users collection")
-    users = db["Users"].find()
+    users = DB_USERS.find()
 
     json_data = dumps(users)
     return json_data
@@ -41,15 +41,22 @@ def get_user(user_id):
 
 def get_chats(user_id):
     print(f'Getting chats from user_id: {user_id}')
-    chats = db["Chat"].find({'sender_ID': user_id})
+    chats = DB_CHATS.find({'sender_ID': user_id})
 
     json_data = dumps(chats)
     return json_data
 
 def post_message(message):
-    chats = db["Chat"]
-    chats.insert_one(message)
+    DB_CHATS.insert_one(message)
     print("Sucessfully inserted message into database")
+
+def attempt_login(email, password):
+    user = DB_USERS.find_one({'email': email})
+
+    if user and user["password"] == password:
+        return user["p_id"]
+    else:
+        return ""
 
 def get_connection_string():
     return os.getenv("DB_URI")
@@ -74,3 +81,6 @@ def connect_to_db():
     return db
 
 db = connect_to_db()
+DB_CHATS = db["Chat"]
+DB_USERS = db["Users"]
+DB_ROLES = db["Roles"]
