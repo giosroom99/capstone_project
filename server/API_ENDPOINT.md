@@ -25,3 +25,5 @@ This should add a new chat to the database.
     "is_manager_response": false,
     "is_read": true
     }
+
+https://us06web.zoom.us/meeting/register/tZ0kf-yqqDkvHt1LE4WTLLq4rT9Wsbe1Gfu3
