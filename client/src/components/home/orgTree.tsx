@@ -6,9 +6,12 @@ const OrganizationTree = ({ roleData }) => {
       children: [],
     };
 
-    const subordinates = roleData.users_reporting_mngr.filter(
-      (subordinateId) => subordinateId !== userId
+    const subordinates = roleData.users_reporting_mngr.filter((subordinateId) =>
+      roleData.users_reporting_mngr.some(
+        (reportingId) => reportingId === userId && subordinateId !== userId
+      )
     );
+
     if (subordinates.length > 0) {
       userNode.children = subordinates.map((subordinateId) =>
         buildTree(subordinateId)
@@ -28,11 +31,7 @@ const OrganizationTree = ({ roleData }) => {
     <ul key={node.id}>
       <li>{node.name}</li>
       {node.children.length > 0 && (
-        <li>
-          {node.children.map((child) => (
-            <ul key={child.id}>{renderTree(child)}</ul>
-          ))}
-        </li>
+        <li>{node.children.map((child) => renderTree(child))}</li>
       )}
     </ul>
   );
