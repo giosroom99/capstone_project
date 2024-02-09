@@ -1,9 +1,7 @@
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
-import pandas as pd
-import pickle
-from preprocessing import preprocess
 from nltk.stem.porter import PorterStemmer
+import pickle
 import re
 
 model = pickle.load(open('MNB_feedback_model.pkl', 'rb'))
