@@ -1,10 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import {} from "react-router-dom";
 import { api } from "../../utils/apiCall";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e: any) => {
     e.preventDefault();
@@ -12,13 +14,14 @@ export default function LoginForm() {
     try {
       const response = await api.post("login", { email, password });
 
-      if (response.accessToken) {
-        console.log("Login successful. Token:", response.accessToken);
+      if (response.p_id) {
+        localStorage.setItem("userId", response.p_id);
+        navigate("/home");
       } else {
-        console.error("Login failed:", response.message);
+        alert(`Login failed: ${response.message}`);
       }
     } catch (error) {
-      console.error("Error during login:", error.message);
+      alert(`Error during login :${error.message}`);
     }
   };
 

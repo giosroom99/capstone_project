@@ -1,19 +1,23 @@
+import { api } from "../../utils/apiCall";
 import OrganizationThree from "./orgTree";
 import ProfileCard from "./userProfileCard";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const roleData = {
-    r_id: "1fdd0f77-c8bd-43e8-ad9b-03ac95e3c1ad",
-    r_name: "Manager",
-    user_mngr_assigned_to_role: "e3a6211a-5eab-4d3d-b7dd-9c927fcd8979",
-    users_reporting_mngr: [
-      "24747d9e-eace-4f55-9fe5-7d3604319c3e",
-      "39def820-7039-4d26-bfe1-f7a28dc0f548",
-      "45e3e0f9-506b-4412-a32f-6ffa3515cc58",
-      "e0062da2-42a9-4712-973a-9c21333ae109",
-      "7c536ba3-a259-47e9-923d-3591e39c73e5",
-    ],
-  };
+  const [userData, setUserData] = useState();
+  const [userData, setUserData] = useState();
+
+  localStorage.setItem("userId", "4b0b9c0d-b181-4540-8e8a-0d9a5b0b5472");
+  useEffect(() => {
+    const userId = localStorage.getItem("userId");
+    const fecthData = async () => {
+      const data = await api.get(`user/${userId}`);
+      setUserData(data);
+    };
+    fecthData();
+  }, []);
+
+  const roleData = "";
 
   return (
     <div className="container m-3">

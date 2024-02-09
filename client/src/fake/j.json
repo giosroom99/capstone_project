@@ -1,0 +1,19 @@
+{
+  "_id": { "$oid": "65c636678725230df9212dea" },
+  "f_name": "Ronald",
+  "l_name": "Wagner",
+  "p_id": "4b0b9c0d-b181-4540-8e8a-0d9a5b0b5472",
+  "email": "fostermary@example.org",
+  "password": "@c&gE5wB!0",
+  "manager_info": {
+    "_id": { "$oid": "65c636ec8725230df922ddc3" },
+    "r_id": "6222e711-b688-4f53-b3bf-74c44b66ec3e",
+    "r_name": "Manager",
+    "user_mngr_assigned_to_role": "3925a93c-b45d-464e-a0d8-20cc322ee9ad",
+    "users_reporting_mngr": [
+      "8400ece4-a412-41e8-bf77-9536148b368a",
+      "4b279107-cbfe-46d5-9007-cf2b638a6df0",
+      "4b0b9c0d-b181-4540-8e8a-0d9a5b0b5472"
+    ]
+  }
+}

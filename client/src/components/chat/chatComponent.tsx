@@ -5,7 +5,7 @@ import Analysis from "./sentimentAnalysis";
 const ChatComponent = () => {
   const managerId = "yourManagerId";
   const employeeId = "yourEmployeeId";
-  const isManager = true;
+  const isManager = false;
 
   const handleSubmitMessage = async (newMessage) => {
     try {

@@ -15,10 +15,29 @@ def get_users():
 
 def get_user(user_id):
     print(f'Finding user with id: {user_id}')
+    
+    # Find user data
     user = db["Users"].find_one({'p_id': user_id})
+    
+    if user:
+        # Find manager data
+        user_manager_data = db["Roles"].find_one({
+            "users_reporting_mngr": user_id
+        })
 
-    json_data = dumps(user)
-    return json_data
+        if user_manager_data:
+            user['manager_info'] = user_manager_data
+        else:
+            user['manager_info'] = None
+
+        # Convert user dictionary to JSON
+        json_data = dumps(user)
+        return json_data
+    else:
+        return "User not found"
+   
+
+    
 
 def get_chats(user_id):
     print(f'Getting chats from user_id: {user_id}')

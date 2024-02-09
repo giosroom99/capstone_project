@@ -1,5 +1,4 @@
-import People from "../fake/People.json";
-import Roles from "../fake/Roles.json";
+// import People from "../fake/People.json";
 
 const API_URL = "http://localhost:5000";
 
@@ -14,10 +13,8 @@ export const api = {
       options.headers["Content-Type"] = "application/json";
       options.body = JSON.stringify(data);
     }
-    //const response = await fetch(`${API_URL}/${url}`, options);
-    //const responseData = await response.json();
-    const responseData = People[0];
-    console.log(responseData);
+    const response = await fetch(`${API_URL}/${url}`, options);
+    const responseData = await response.json();
 
     return responseData;
   },
