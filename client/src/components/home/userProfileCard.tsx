@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import profileImage from "../../assets/img/profile.jpg";
 
 export default function ProfileCard(props) {
@@ -10,12 +9,12 @@ export default function ProfileCard(props) {
       </div>
     );
   }
-  console.log(userInfo);
+
   return (
     <div>
-      <div className="card mb-3" style={{ maxWidth: "540px;" }}>
+      <div className="card mb-3 m-1" style={{ maxWidth: "540px;" }}>
         <div className="row g-0">
-          <div className="col-md-4">
+          <div className="col-md-4 ">
             <img
               src={profileImage}
               className="img-fluid rounded-start"
@@ -29,20 +28,16 @@ export default function ProfileCard(props) {
                 {userInfo.f_name} {userInfo.l_name}
               </h5>
               <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                <span className="fw-bold">Bio:</span> {userInfo.Bio}
               </p>
               <p className="card-text">
-                <small className="text-body-secondary">{userInfo.email}</small>
+                <span className="fw-bold">Email: {"  "} </span>
+                <small className="text-body-secondary"> {userInfo.email}</small>
               </p>
+
               <p className="card-text">
-                <small className="text-body-secondary">
-                  Report to: Nickole D More
-                </small>
-              </p>
-              <p className="card-text">
-                <small className="text-body-secondary">Claims</small>
+                <span className="fw-bold">LOB: </span>
+                <small className="text-body-secondary">{userInfo.LOB}</small>
               </p>
             </div>
             <div className="card-body">
