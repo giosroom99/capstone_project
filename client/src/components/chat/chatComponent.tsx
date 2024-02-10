@@ -1,15 +1,31 @@
 import Chat from "./chat";
 import { api } from "../../utils/apiCall";
 import Analysis from "./sentimentAnalysis";
+import { useEffect, useState } from "react";
 
 const ChatComponent = () => {
-  const managerId = "yourManagerId";
-  const employeeId = "yourEmployeeId";
-  const isManager = false;
+  let isManager = false;
+  localStorage.setItem("userId", "136cc54d-b14f-4085-aced-7e763ce252df");
+
+  const [userData, setUserData] = useState();
+
+  const userId = localStorage.getItem("userId");
+
+  useEffect(() => {
+    const getUserData = async () => {
+      try {
+        const data = await api.get(`/user/${userId}`);
+        setUserData(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    getUserData();
+  }, []);
 
   const handleSubmitMessage = async (newMessage) => {
     try {
-      const response = api.post("/api/chat", newMessage);
+      const response = api.post("/chat", newMessage);
 
       if (!response.ok) {
         throw new Error("Failed to submit message");
@@ -18,7 +34,17 @@ const ChatComponent = () => {
       console.error("Error submitting message:", error);
     }
   };
-
+  if (!userData) {
+    return (
+      <div>
+        <h1>no data here </h1>
+      </div>
+    );
+  }
+  if (userData.role === "Manager") {
+    isManager = true;
+  }
+  const managerId = userData.manager_info.user_mngr_assigned_to_role;
   return (
     <div className="container">
       <h1 className="">
@@ -31,8 +57,9 @@ const ChatComponent = () => {
       <div className="row justify-content-center">
         <div className="col-10">
           <Chat
+            userData={userData}
             managerId={managerId}
-            employeeId={employeeId}
+            loggedInUser={userId}
             onSubmitMessage={handleSubmitMessage}
           />
         </div>

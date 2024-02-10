@@ -13,6 +13,8 @@ def get_users():
     json_data = dumps(users)
     return json_data
 
+
+
 def get_user(user_id):
     print(f'Finding user with id: {user_id}')
     
@@ -21,6 +23,9 @@ def get_user(user_id):
     
     if user:
         # Find manager data
+        user_role = DB_ROLES.find_one({"user_mngr_assigned_to_role":user_id})
+        if(user_role):
+            user['role'] = "Manager"
         user_manager_data = db["Roles"].find_one({
             "users_reporting_mngr": user_id
         })
@@ -41,7 +46,13 @@ def get_user(user_id):
 
 def get_chats(user_id):
     print(f'Getting chats from user_id: {user_id}')
-    chats = DB_CHATS.find({'sender_ID': user_id})
+    chats = DB_CHATS.find({
+    '$or': [
+        {'sender_ID': user_id},
+        {'recipient_ID': user_id}
+    ]
+})
+
 
     json_data = dumps(chats)
     return json_data

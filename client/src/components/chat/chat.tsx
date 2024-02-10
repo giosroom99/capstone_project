@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import { api } from "../../utils/apiCall";
 import fakeConvo from "../../fake/Chat.json";
 
-const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
+const Chat = ({ userData, managerId, loggedInUser, onSubmitMessage }) => {
   const [message, setMessage] = useState("");
   const [conversation, setConversation] = useState([]);
-  const senderID = "employee_1";
-  const isManager = true;
+  const senderID = loggedInUser;
 
   useEffect(() => {
     const container = document.getElementById("chat-container");
@@ -16,9 +15,8 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await api.get("/api/chat");
-        // const chatData = await response;
-        setConversation(fakeConvo);
+        const chatData = await api.get(`/user/${loggedInUser}/chat`);
+        setConversation(chatData);
       } catch (error) {
         console.error("Error fetching chat data:", error);
       }
@@ -26,17 +24,39 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
 
     fetchData();
   }, []);
+  console.log(conversation);
+  let receiver = "";
+  const oneConvo = conversation[0];
+  if (oneConvo) {
+    if (oneConvo.recipient_ID === loggedInUser) {
+      receiver = oneConvo.sender_ID;
+    } else {
+      receiver = oneConvo.recipient_ID;
+    }
+  }
 
   const handleSubmit = async (e) => {
+    let newMessage = {};
     e.preventDefault();
-    const newMessage = {
-      sender_ID: employeeId,
-      recipient_ID: managerId,
-      message_text: message,
-      timestamp: new Date(),
-      is_manager_response: false,
-      is_read: true,
-    };
+    if (userData.role === "Manager") {
+      newMessage = {
+        sender_ID: loggedInUser,
+        recipient_ID: receiver,
+        message_text: message,
+        timestamp: new Date(),
+        is_manager_response: true,
+        is_read: true,
+      };
+    } else {
+      newMessage = {
+        sender_ID: loggedInUser,
+        recipient_ID: receiver,
+        message_text: message,
+        timestamp: new Date(),
+        is_manager_response: false,
+        is_read: true,
+      };
+    }
 
     setConversation([...conversation, newMessage]);
 
