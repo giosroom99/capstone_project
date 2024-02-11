@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { api } from "../../utils/apiCall";
-import fakeConvo from "../../fake/Chat.json";
 
 const Chat = ({ userData, managerId, loggedInUser, onSubmitMessage }) => {
   const [message, setMessage] = useState("");
@@ -24,7 +23,7 @@ const Chat = ({ userData, managerId, loggedInUser, onSubmitMessage }) => {
 
     fetchData();
   }, []);
-  console.log(conversation);
+
   let receiver = "";
   const oneConvo = conversation[0];
   if (oneConvo) {
@@ -71,35 +70,32 @@ const Chat = ({ userData, managerId, loggedInUser, onSubmitMessage }) => {
         id="chat-container"
         className="mb-5"
         style={{
-          maxHeight: "420px",
+          maxHeight: "70vh",
           overflowY: "auto",
         }}
       >
-        {conversation
-          .slice()
-
-          .map((msg) => (
-            <div
-              key={msg.chat_ID}
-              className={
+        {conversation.slice().map((msg) => (
+          <div
+            key={msg.chat_ID}
+            className={
+              msg.sender_ID !== senderID
+                ? "alert alert-secondary"
+                : "alert alert-primary"
+            }
+          >
+            <p>{msg.message_text}</p>
+            <p
+              className={`${
                 msg.sender_ID !== senderID
-                  ? "alert alert-secondary"
-                  : "alert alert-primary"
-              }
+                  ? "text-sm-start pt-1 "
+                  : "text-sm-end pt-1 "
+              } fw-bold font-monospace  fs-6`}
             >
-              <p>{msg.message_text}</p>
-              <p
-                className={`${
-                  msg.sender_ID !== senderID
-                    ? "text-sm-start pt-1 "
-                    : "text-sm-end pt-1 "
-                } fw-bold font-monospace  fs-6`}
-              >
-                {" "}
-                {msg.timestamp}
-              </p>
-            </div>
-          ))}
+              {" "}
+              {msg.timestamp.$date}
+            </p>
+          </div>
+        ))}
       </div>
       <form onSubmit={handleSubmit}>
         <div className="input-group mb-3">

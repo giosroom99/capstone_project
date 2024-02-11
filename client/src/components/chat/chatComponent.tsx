@@ -4,11 +4,10 @@ import Analysis from "./sentimentAnalysis";
 import { useEffect, useState } from "react";
 
 const ChatComponent = () => {
+  let managerId = null;
   let isManager = false;
   localStorage.setItem("userId", "136cc54d-b14f-4085-aced-7e763ce252df");
-
   const [userData, setUserData] = useState();
-
   const userId = localStorage.getItem("userId");
 
   useEffect(() => {
@@ -26,7 +25,6 @@ const ChatComponent = () => {
   const handleSubmitMessage = async (newMessage) => {
     try {
       const response = api.post("/chat", newMessage);
-
       if (!response.ok) {
         throw new Error("Failed to submit message");
       }
@@ -34,6 +32,7 @@ const ChatComponent = () => {
       console.error("Error submitting message:", error);
     }
   };
+
   if (!userData) {
     return (
       <div>
@@ -41,10 +40,12 @@ const ChatComponent = () => {
       </div>
     );
   }
+
   if (userData.role === "Manager") {
     isManager = true;
+    managerId = userData.p_id;
   }
-  const managerId = userData.manager_info.user_mngr_assigned_to_role;
+
   return (
     <div className="container">
       <h1 className="">
@@ -55,7 +56,7 @@ const ChatComponent = () => {
         )}
       </h1>
       <div className="row justify-content-center">
-        <div className="col-10">
+        <div className="col-md-10">
           <Chat
             userData={userData}
             managerId={managerId}
@@ -64,7 +65,7 @@ const ChatComponent = () => {
           />
         </div>
         {isManager === true ? (
-          <div className="col-2">
+          <div className="col-md-2">
             <h5 className="text-center">Positivity Analyzer</h5>
             <Analysis />
           </div>
