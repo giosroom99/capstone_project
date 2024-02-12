@@ -8,6 +8,7 @@ const ChatComponent = () => {
   const [userData, setUserData] = useState();
   const [conversationData, setConversationData] = useState();
   const [selectedUser, setSelectedUser] = useState(null);
+  const [uniqueUserIDs, setUniqueUserIDs] = useState([]);
   const userId = localStorage.getItem("userId");
 
   useEffect(() => {
@@ -17,12 +18,46 @@ const ChatComponent = () => {
         const conversationData = await api.get(`/user/${userId}/chat`);
         setUserData(dataUser);
         setConversationData(conversationData);
+
+        // Extract unique IDs of users from the filtered chats
+        if (dataUser.role === "Manager") {
+          const idsToFilter = dataUser.employees;
+          const uniqueIDs = Array.from(
+            new Set(
+              conversationData.reduce((userIDs, chat) => {
+                if (idsToFilter.includes(chat.sender_ID)) {
+                  userIDs.push(chat.sender_ID);
+                }
+                if (idsToFilter.includes(chat.recipient_ID)) {
+                  userIDs.push(chat.recipient_ID);
+                }
+                return userIDs;
+              }, [])
+            )
+          );
+          setUniqueUserIDs(uniqueIDs);
+        }
       } catch (error) {
         console.error(error);
       }
     };
     getUserData();
-  }, [userId, selectedUser]); // Add selectedUser as a dependency
+  }, [userId, selectedUser]);
+
+  useEffect(() => {
+    const fetchChatData = async () => {
+      if (selectedUser) {
+        try {
+          const chatData = await api.get(`/user/${selectedUser}/chat`);
+          setConversationData(chatData);
+        } catch (error) {
+          console.error("Error fetching chat data:", error);
+        }
+      }
+    };
+
+    fetchChatData();
+  }, [selectedUser]);
 
   const handleSubmitMessage = async (newMessage) => {
     try {
@@ -56,26 +91,22 @@ const ChatComponent = () => {
           "Anonymous Chat"
         )}
       </h1>
-      <Chat
-        userData={userData}
-        employeeID={userData.role === "Manager" ? selectedUser : null}
-        onSubmitMessage={handleSubmitMessage}
-      />
-      {userData.role === "Manager" && (
+
+      {userData.role === "Manager" ? (
         <div className="">
           <ol className="list-group list-group-numbered">
-            {conversationData.map((chat, index) => (
+            {uniqueUserIDs.map((id, index) => (
               <li
                 key={index}
                 className="list-group-item d-flex justify-content-between align-items-start"
-                onClick={() => handleListItemClick(chat.sender_ID)}
+                onClick={() => handleListItemClick(id)}
                 style={{ cursor: "pointer" }}
               >
                 <div className="ms-2 me-auto">
                   <div className="fw-bold">
                     Mysterious <i className="bi bi-incognito"></i>
                   </div>
-                  A private feedback
+                  {id}
                 </div>
                 <span className="badge bg-dark rounded-pill">
                   <i className="bi bi-incognito"></i>
@@ -83,7 +114,20 @@ const ChatComponent = () => {
               </li>
             ))}
           </ol>
+          {selectedUser && (
+            <Chat
+              userData={userData}
+              employeeID={selectedUser}
+              onSubmitMessage={handleSubmitMessage}
+            />
+          )}
         </div>
+      ) : (
+        <Chat
+          userData={userData}
+          employeeID={selectedUser}
+          onSubmitMessage={handleSubmitMessage}
+        />
       )}
     </div>
   );

@@ -26,8 +26,15 @@ const Chat: React.FC<ChatProps> = ({
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const chatData = await api.get(`/user/${employeeID}/chat`);
-        setConversation(chatData);
+        if (employeeID) {
+          const chatData = await api.get(`/user/${employeeID}/chat`);
+          console.log({ employeChat: employeeID });
+          setConversation(chatData);
+        } else {
+          const chatData = await api.get(`/user/${loggedInUser}/chat`);
+          console.log({ manger: chatData });
+          setConversation(chatData);
+        }
       } catch (error) {
         console.error("Error fetching chat data:", error);
       }
