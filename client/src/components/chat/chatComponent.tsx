@@ -47,40 +47,28 @@ const ChatComponent = () => {
     );
   }
 
-  if (userData.role === "Manager") {
-    isManager = true;
-    const idsToFilter = userData.employees;
-
-    const uniqueUserIDs = Array.from(
-      new Set(
-        conversationData.reduce((userIDs, chat) => {
-          if (idsToFilter.includes(chat.sender_ID)) {
-            userIDs.push(chat.sender_ID);
-          }
-          if (idsToFilter.includes(chat.recipient_ID)) {
-            userIDs.push(chat.recipient_ID);
-          }
-          return userIDs;
-        }, [])
-      )
-    );
-
-    return (
-      <div className="container">
-        <h1 className="">
-          {isManager === true ? (
-            <i className="bi bi-incognito"></i>
-          ) : (
-            "Anonymous Chat"
-          )}
-        </h1>
+  return (
+    <div className="container">
+      <h1 className="">
+        {userData.role === "Manager" ? (
+          <i className="bi bi-incognito"></i>
+        ) : (
+          "Anonymous Chat"
+        )}
+      </h1>
+      <Chat
+        userData={userData}
+        employeeID={userData.role === "Manager" ? selectedUser : null}
+        onSubmitMessage={handleSubmitMessage}
+      />
+      {userData.role === "Manager" && (
         <div className="">
           <ol className="list-group list-group-numbered">
-            {uniqueUserIDs.map((id, index) => (
+            {conversationData.map((chat, index) => (
               <li
                 key={index}
                 className="list-group-item d-flex justify-content-between align-items-start"
-                onClick={() => handleListItemClick(id)}
+                onClick={() => handleListItemClick(chat.sender_ID)}
                 style={{ cursor: "pointer" }}
               >
                 <div className="ms-2 me-auto">
@@ -95,20 +83,10 @@ const ChatComponent = () => {
               </li>
             ))}
           </ol>
-
-          {selectedUser && (
-            <Chat
-              userData={userData}
-              employeeID={selectedUser}
-              onSubmitMessage={handleSubmitMessage}
-            />
-          )}
         </div>
-      </div>
-    );
-  }
-
-  return null;
+      )}
+    </div>
+  );
 };
 
 export default ChatComponent;
