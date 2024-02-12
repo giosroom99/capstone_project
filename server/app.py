@@ -33,6 +33,10 @@ def upload_newmessage():
     message_text = data.get("message_text")
     is_manager_response = data.get("is_manager_response") == "true"
     timestamp = datetime.datetime.now(tz=datetime.timezone.utc)
+    sentiment = "N/A"
+
+    if not is_manager_response:
+        sentiment = fp.predict_sentiment(message_text)
 
     message = {
         "chat_ID": "-1",
@@ -41,16 +45,12 @@ def upload_newmessage():
         "message_text": message_text,
         "timestamp": timestamp,
         "is_manager_response": is_manager_response,
-        "is_read": False
+        "is_read": False,
+        "sentiment": sentiment
     }
 
     print("Posting message")
     db.post_message(message)
-
-    if not message["is_manager_response"]:
-        sentiment = fp.predict_sentiment(message["message_text"])
-        return sentiment, 201
-
     return "Success", 201
 
 @app.route('/login', methods=['POST'])
