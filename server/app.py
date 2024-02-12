@@ -43,7 +43,7 @@ def upload_newmessage():
         sentiment = fp.predict_sentiment(message_text)
 
     message = {
-        "chat_ID": Binary.from_uuid(uuid.uuid4()),
+        "chat_ID": str(uuid.uuid4()),
         "sender_ID": sender_ID,
         "recipient_ID": recipient_ID,
         "message_text": message_text,
