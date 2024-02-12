@@ -14,11 +14,16 @@ export const api = {
       options.body = JSON.stringify(data);
     }
     const response = await fetch(`${API_URL}/${url}`, options);
-    const responseData = await response.json();
+    let responseData;
 
+    try {
+      responseData = await response.json();
+    } catch (error) {
+      console.error("Non-JSON response:", response);
+      return null;
+    }
     return responseData;
   },
-  // make a get request to the server
   get: (url) => api.request("GET", url),
 
   // make a post request to the server

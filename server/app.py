@@ -63,9 +63,9 @@ def attempt_login():
     res = db.attempt_login(email, password)
 
     if res == "":
-        return "Login attempt failed", 401
+        return jsonify({"error": "Login attempt failed"}), 401
     else:
-        return res, 200
+        return jsonify({"data": res}), 200
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)

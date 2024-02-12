@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
+  let isLoggedIn;
   const selectHeader = document.querySelector("#header");
-
+  const userId = localStorage.getItem("userId");
+  if (userId) {
+    isLoggedIn = true;
+  }
   if (selectHeader) {
     /* empty */
   }
@@ -11,9 +15,12 @@ export default function NavigationBar() {
     <div>
       <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <Link to={"/home"}>
+            <a className="navbar-brand" href="#">
+              GhostPulse
+            </a>
+          </Link>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -27,13 +34,6 @@ export default function NavigationBar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <Link to={"/"}>
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
-                    Home
-                  </a>
-                </li>
-              </Link>
               <Link to={"/chat"}>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -41,25 +41,36 @@ export default function NavigationBar() {
                   </a>
                 </li>
               </Link>
-              <Link to={"/"}>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Login
-                  </a>
-                </li>
-              </Link>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Logout
-                </a>
-              </li>
 
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="bi bi-bell-fill"></i> Activity
                 </a>
               </li>
+
+              {isLoggedIn === true ? (
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    onClick={() => {
+                      isLoggedIn = false;
+                      localStorage.removeItem("userId");
+
+                      window.location.reload();
+                    }}
+                  >
+                    Logout
+                  </a>
+                </li>
+              ) : (
+                <Link to={"/"}>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      Login
+                    </a>
+                  </li>
+                </Link>
+              )}
             </ul>
             <form className="d-flex" role="search">
               <input

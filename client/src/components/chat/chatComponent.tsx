@@ -4,9 +4,7 @@ import Analysis from "./sentimentAnalysis";
 import { useEffect, useState } from "react";
 
 const ChatComponent = () => {
-  let managerId = null;
   let isManager = false;
-  localStorage.setItem("userId", "136cc54d-b14f-4085-aced-7e763ce252df");
   const [userData, setUserData] = useState();
   const userId = localStorage.getItem("userId");
 
@@ -43,7 +41,6 @@ const ChatComponent = () => {
 
   if (userData.role === "Manager") {
     isManager = true;
-    managerId = userData.p_id;
   }
 
   return (
@@ -59,7 +56,6 @@ const ChatComponent = () => {
         <div className="col-md-10">
           <Chat
             userData={userData}
-            managerId={managerId}
             loggedInUser={userId}
             onSubmitMessage={handleSubmitMessage}
           />

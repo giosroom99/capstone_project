@@ -26,6 +26,8 @@ def get_user(user_id):
         user_role = DB_ROLES.find_one({"user_mngr_assigned_to_role":user_id})
         if(user_role):
             user['role'] = "Manager"
+        else:
+            user['role'] = "Employee"
         user_manager_data = db["Roles"].find_one({
             "users_reporting_mngr": user_id
         })
