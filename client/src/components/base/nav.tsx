@@ -17,7 +17,7 @@ export default function NavigationBar() {
         <div className="container-fluid">
           <Link to={"/home"}>
             <a className="navbar-brand" href="#">
-              GhostPulse
+            Home
             </a>
           </Link>
 
@@ -37,16 +37,16 @@ export default function NavigationBar() {
               <Link to={"/chat"}>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    Feedback
+                    <i class="bi bi-chat"></i> Feedback
                   </a>
                 </li>
               </Link>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="bi bi-bell-fill"></i> Activity
                 </a>
-              </li>
+              </li> */}
 
               {isLoggedIn === true ? (
                 <li className="nav-item">
@@ -59,20 +59,20 @@ export default function NavigationBar() {
                       window.location.reload();
                     }}
                   >
-                    Logout
+                    <i class="bi bi-box-arrow-right"></i> Logout
                   </a>
                 </li>
               ) : (
                 <Link to={"/"}>
                   <li className="nav-item">
                     <a className="nav-link" href="#">
-                      Login
+                    <i class="bi bi-box-arrow-in-right"></i> Login
                     </a>
                   </li>
                 </Link>
               )}
             </ul>
-            <form className="d-flex" role="search">
+            {/* <form className="d-flex" role="search">
               <input
                 className="form-control me-2"
                 type="search"
@@ -82,7 +82,7 @@ export default function NavigationBar() {
               <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
       </nav>
