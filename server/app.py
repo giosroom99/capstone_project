@@ -35,7 +35,7 @@ def upload_newmessage():
     sender_ID = data.get("sender_ID")
     recipient_ID = data.get("recipient_ID")
     message_text = data.get("message_text")
-    is_manager_response = data.get("is_manager_response") == "true"
+    is_manager_response = data.get("is_manager_response") == True
     timestamp = datetime.datetime.now(tz=datetime.timezone.utc)
     sentiment = "N/A"
 
