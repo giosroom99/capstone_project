@@ -1,5 +1,9 @@
+import uuid
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
+from bson.binary import Binary
+import uuid
+
 import datetime
 import db
 import feedback_predicter as fp
@@ -39,7 +43,7 @@ def upload_newmessage():
         sentiment = fp.predict_sentiment(message_text)
 
     message = {
-        "chat_ID": "-1",
+        "chat_ID": Binary.from_uuid(uuid.uuid4()),
         "sender_ID": sender_ID,
         "recipient_ID": recipient_ID,
         "message_text": message_text,
@@ -63,9 +67,9 @@ def attempt_login():
     res = db.attempt_login(email, password)
 
     if res == "":
-        return "Login attempt failed", 401
+        return jsonify({"error": "Login attempt failed"}), 401
     else:
-        return res, 200
+        return jsonify({"data": res}), 200
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)

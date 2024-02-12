@@ -1,19 +1,22 @@
-{
-  "_id": { "$oid": "65c636678725230df9212dea" },
-  "f_name": "Ronald",
-  "l_name": "Wagner",
-  "p_id": "4b0b9c0d-b181-4540-8e8a-0d9a5b0b5472",
-  "email": "fostermary@example.org",
-  "password": "@c&gE5wB!0",
-  "manager_info": {
-    "_id": { "$oid": "65c636ec8725230df922ddc3" },
-    "r_id": "6222e711-b688-4f53-b3bf-74c44b66ec3e",
-    "r_name": "Manager",
-    "user_mngr_assigned_to_role": "3925a93c-b45d-464e-a0d8-20cc322ee9ad",
-    "users_reporting_mngr": [
-      "8400ece4-a412-41e8-bf77-9536148b368a",
-      "4b279107-cbfe-46d5-9007-cf2b638a6df0",
-      "4b0b9c0d-b181-4540-8e8a-0d9a5b0b5472"
-    ]
+[
+  {
+    "_id": { "$oid": "65c94dd63df6fb6cb5b9bd82" },
+    "chat_ID": "-1",
+    "sender_ID": "615b576b-1467-48d8-9d27-584cc891eac5",
+    "recipient_ID": "",
+    "message_text": "Hello ",
+    "timestamp": { "$date": "2024-02-11T22:44:38.787Z" },
+    "is_manager_response": false,
+    "is_read": false
+  },
+  {
+    "_id": { "$oid": "65c94f803df6fb6cb5b9bd83" },
+    "chat_ID": "-1",
+    "sender_ID": "615b576b-1467-48d8-9d27-584cc891eac5",
+    "recipient_ID": "",
+    "message_text": "Hello, have you ever received my messages ?",
+    "timestamp": { "$date": "2024-02-11T22:51:44.379Z" },
+    "is_manager_response": false,
+    "is_read": false
   }
-}
+]

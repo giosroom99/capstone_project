@@ -1,12 +1,22 @@
 import { useState, useEffect } from "react";
 import { api } from "../../utils/apiCall";
-import fakeConvo from "../../fake/Chat.json";
+import Analysis from "./sentimentAnalysis";
 
-const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
+interface ChatProps {
+  userData: any; // Adjust the type based on your userData structure
+  employeeID?: string; // Make the employeeID optional
+  onSubmitMessage: (newMessage: any) => void; // Adjust the type based on your onSubmitMessage function
+}
+
+const Chat: React.FC<ChatProps> = ({
+  userData,
+  employeeID,
+  onSubmitMessage,
+}) => {
   const [message, setMessage] = useState("");
   const [conversation, setConversation] = useState([]);
-  const senderID = "employee_1";
-  const isManager = true;
+  const senderID = userData.p_id;
+  const loggedInUser = localStorage.getItem("userId");
 
   useEffect(() => {
     const container = document.getElementById("chat-container");
@@ -16,25 +26,46 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await api.get("/api/chat");
-        // const chatData = await response;
-        setConversation(fakeConvo);
+        const chatData = await api.get(`/user/${employeeID}/chat`);
+        setConversation(chatData);
       } catch (error) {
         console.error("Error fetching chat data:", error);
       }
     };
 
     fetchData();
-  }, []);
+  }, [loggedInUser]);
+
+  const userRole = userData.role;
+
+  let receiver = "";
+  const oneConvo = conversation[0];
+  if (oneConvo) {
+    receiver =
+      oneConvo.recipient_ID === loggedInUser
+        ? oneConvo.sender_ID
+        : oneConvo.recipient_ID;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Check if the user is an Employee and has a manager assigned
+    if (userRole === "Employee" && userData.manager_info) {
+      receiver = userData.manager_info.user_mngr_assigned_to_role;
+    }
+
+    // Check if the user is a Manager and there is an existing conversation
+    if (userRole === "Manager" && conversation.length > 0) {
+      receiver = employeeID;
+    }
+
     const newMessage = {
-      sender_ID: employeeId,
-      recipient_ID: managerId,
+      sender_ID: loggedInUser,
+      recipient_ID: receiver,
       message_text: message,
       timestamp: new Date(),
-      is_manager_response: false,
+      is_manager_response: userRole === "Manager",
       is_read: true,
     };
 
@@ -46,57 +77,86 @@ const Chat = ({ managerId, employeeId, onSubmitMessage }) => {
   };
 
   return (
-    <div className="container bg-dark border border-2 rounded mt-1">
-      <div
-        id="chat-container"
-        className="mb-5"
-        style={{
-          maxHeight: "420px",
-          overflowY: "auto",
-        }}
-      >
-        {conversation
-          .slice()
-
-          .map((msg) => (
-            <div
-              key={msg.chat_ID}
-              className={
-                msg.sender_ID !== senderID
-                  ? "alert alert-secondary"
-                  : "alert alert-primary"
-              }
-            >
-              <p>{msg.message_text}</p>
-              <p
-                className={`${
-                  msg.sender_ID !== senderID
-                    ? "text-sm-start pt-1 "
-                    : "text-sm-end pt-1 "
-                } fw-bold font-monospace  fs-6`}
+    <div className="container">
+      <div className="row justify-content-center">
+        <div className="col-md-10">
+          {" "}
+          {userRole === "Manager" && conversation.length === 0 ? (
+            <div className="bg-dark border border-2 rounded mt-1">
+              <div
+                id="chat-container"
+                className="mb-5"
+                style={{
+                  maxHeight: "70vh",
+                  overflowY: "auto",
+                }}
               >
-                {" "}
-                {msg.timestamp}
-              </p>
+                <h1>No messages here</h1>
+              </div>
             </div>
-          ))}
-      </div>
-      <form onSubmit={handleSubmit}>
-        <div className="input-group mb-3">
-          <input
-            type="text"
-            className="form-control"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            placeholder="Type your message..."
-          />
-          <div className="input-group-append">
-            <button className="btn btn-primary" type="submit">
-              Send
-            </button>
-          </div>
+          ) : (
+            <div className="container bg-dark border border-2 rounded mt-1">
+              <div
+                id="chat-container"
+                className="mb-5"
+                style={{
+                  maxHeight: "70vh",
+                  overflowY: "auto",
+                }}
+              >
+                {conversation.map((msg) => (
+                  <div
+                    key={msg.chat_ID}
+                    className={
+                      msg.sender_ID !== senderID
+                        ? "alert alert-secondary"
+                        : "alert alert-primary"
+                    }
+                  >
+                    <p>{msg.message_text}</p>
+                    <p
+                      className={`${
+                        msg.sender_ID !== senderID
+                          ? "text-sm-start pt-1"
+                          : "text-sm-end pt-1"
+                      } fw-bold font-monospace fs-6`}
+                    >
+                      {" "}
+                      {new Date(msg.timestamp.$date).toLocaleString()}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <form onSubmit={handleSubmit}>
+                <div className="input-group mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Type your message..."
+                  />
+                  <div className="input-group-append">
+                    <button className="btn btn-primary" type="submit">
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          )}
         </div>
-      </form>
+        <div className="col-md-2">
+          {userRole === "Manager" ? (
+            <div className="col-md-2">
+              <h5 className="text-center">Positivity Analyzer</h5>
+              <Analysis conversationList={conversation} />
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
+      </div>
     </div>
   );
 };
