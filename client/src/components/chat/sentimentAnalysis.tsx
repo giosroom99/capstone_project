@@ -1,18 +1,26 @@
-import fakeConvo from "../../fake/Chat.json";
-export default function Analysis() {
-  const mostRecentChat = getMostRecentChat(fakeConvo);
+import React from "react";
 
-  const positiveRate = countSentiment(fakeConvo);
+const Analysis = ({ conversationList }) => {
+  if (!conversationList || conversationList.length === 0) {
+    return (
+      <div className="container">
+        <div>No data available.</div>
+      </div>
+    );
+  }
+
+  const mostRecentChat = getMostRecentChat(conversationList);
+  const positiveRate = countSentiment(conversationList);
   const mostRecentConvoRate = countSentiment(
-    groupChatsByMostRecentDate(fakeConvo)
+    groupChatsByMostRecentDate(conversationList)
   );
 
   return (
-    <div>
+    <div className="container">
       <div className="card text-center" style={{ width: "18rem" }}>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
-            Last Message:
+            Last Message:{" "}
             <span
               className={
                 mostRecentChat.sentiment === "Positive"
@@ -20,13 +28,11 @@ export default function Analysis() {
                   : "fw-bold text-danger"
               }
             >
-              {" "}
               {mostRecentChat.sentiment}
             </span>
           </li>
-
           <li className="list-group-item">
-            Most recent conversation:
+            Most recent conversation:{" "}
             <span
               className={
                 mostRecentConvoRate > 89
@@ -34,11 +40,9 @@ export default function Analysis() {
                   : "fw-bold text-danger"
               }
             >
-              {" "}
               {mostRecentConvoRate} %
             </span>
           </li>
-
           <li className="list-group-item">
             ALL:{" "}
             <span
@@ -52,15 +56,15 @@ export default function Analysis() {
             </span>
           </li>
         </ul>
-        <div className="card-footer">Card footer</div>
+        <div className="card-footer bg-dark">Card footer</div>
       </div>
     </div>
   );
-}
+};
 
-const getMostRecentChat = (chatList: any[]) => {
+const getMostRecentChat = (chatList) => {
   if (!chatList || chatList.length === 0) {
-    return null;
+    return { sentiment: null };
   }
 
   const sortedChats = chatList.sort(
@@ -72,7 +76,7 @@ const getMostRecentChat = (chatList: any[]) => {
 
 const groupChatsByMostRecentDate = (chatList) => {
   if (!chatList || chatList.length === 0) {
-    return null; // Return null if the list is empty
+    return [];
   }
 
   const sortedChats = chatList.sort(
@@ -96,8 +100,9 @@ const groupChatsByMostRecentDate = (chatList) => {
 
 const countSentiment = (chatList) => {
   if (!chatList || chatList.length === 0) {
-    return null;
+    return 0; // Return 0 when the list is empty
   }
+
   let positiveCount = 0;
   let negativeCount = 0;
 
@@ -109,7 +114,13 @@ const countSentiment = (chatList) => {
     }
   }
 
+  if (positiveCount + negativeCount === 0) {
+    return 0; // Return 0 when both counts are zero
+  }
+
   const positiveRate = positiveCount / (negativeCount + positiveCount);
 
-  return positiveRate;
+  return positiveRate !== 1 ? positiveRate : 0;
 };
+
+export default Analysis;

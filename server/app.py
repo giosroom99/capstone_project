@@ -1,5 +1,9 @@
+import uuid
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
+from bson.binary import Binary
+import uuid
+
 import datetime
 import db
 import feedback_predicter as fp
@@ -35,7 +39,7 @@ def upload_newmessage():
     timestamp = datetime.datetime.now(tz=datetime.timezone.utc)
 
     message = {
-        "chat_ID": "-1",
+        "chat_ID": Binary.from_uuid(uuid.uuid4()),
         "sender_ID": sender_ID,
         "recipient_ID": recipient_ID,
         "message_text": message_text,
