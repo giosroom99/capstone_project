@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       <div className="row justify-content-center">
         {" "}
-        <OrganizationThree managerInfo={userData.manager_info} />
+        <OrganizationThree managerInfo={userData.manager_info} userInfo={userData} />
       </div>
     </div>
   );
