@@ -106,7 +106,7 @@ const ChatComponent = () => {
                   <div className="fw-bold">
                     Mysterious <i className="bi bi-incognito"></i>
                   </div>
-                  {id}
+                  Employee chat
                 </div>
                 <span className="badge bg-dark rounded-pill">
                   <i className="bi bi-incognito"></i>
