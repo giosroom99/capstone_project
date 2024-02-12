@@ -19,7 +19,7 @@ def get_user(user_id):
     print(f'Finding user with id: {user_id}')
     
     # Find user data
-    user = db["Users"].find_one({'p_id': user_id})
+    user = DB_USERS.find_one({'p_id': user_id})
     
     if user:
         # Find manager data
@@ -44,9 +44,6 @@ def get_user(user_id):
         return json_data
     else:
         return "User not found"
-   
-
-    
 
 def get_chats(user_id):
     print(f'Getting chats from user_id: {user_id}')
