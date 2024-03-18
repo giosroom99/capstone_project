@@ -65,7 +65,7 @@ def attempt_login():
     password = data.get("password")
 
     res = db.attempt_login(email, password)
-
+    print(res)
     if res == "":
         return jsonify({"error": "Login attempt failed"}), 401
     else:
